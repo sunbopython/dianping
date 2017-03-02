@@ -1,0 +1,2207 @@
+2017-02-23 10:23:21 [scrapy.utils.log] INFO: Scrapy 1.3.0 started (bot: dianping)
+2017-02-23 10:23:21 [scrapy.utils.log] INFO: Overridden settings: {'RETRY_TIMES': 6, 'LOG_FILE': 'log.txt', 'SPIDER_MODULES': ['dianping.spiders'], 'NEWSPIDER_MODULE': 'dianping.spiders', 'COOKIES_ENABLED': False, 'RETRY_HTTP_CODES': [404, 408, 500, 502, 503, 504], 'DOWNLOAD_TIMEOUT': 10, 'BOT_NAME': 'dianping', 'DUPEFILTER_CLASS': 'dianping.dupefilters.VerboseRFPDupeFilter', 'CONCURRENT_REQUESTS': 20}
+2017-02-23 10:23:21 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole']
+2017-02-23 10:23:21 [twisted] CRITICAL: Unhandled error in Deferred:
+2017-02-23 10:23:21 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "c:\users\edit-000127\appdata\local\programs\python\python35\lib\site-packages\twisted\internet\defer.py", line 1299, in _inlineCallbacks
+    result = g.send(result)
+  File "c:\users\edit-000127\appdata\local\programs\python\python35\lib\site-packages\scrapy\crawler.py", line 72, in crawl
+    self.engine = self._create_engine()
+  File "c:\users\edit-000127\appdata\local\programs\python\python35\lib\site-packages\scrapy\crawler.py", line 97, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "c:\users\edit-000127\appdata\local\programs\python\python35\lib\site-packages\scrapy\core\engine.py", line 69, in __init__
+    self.downloader = downloader_cls(crawler)
+  File "c:\users\edit-000127\appdata\local\programs\python\python35\lib\site-packages\scrapy\core\downloader\__init__.py", line 88, in __init__
+    self.middleware = DownloaderMiddlewareManager.from_crawler(crawler)
+  File "c:\users\edit-000127\appdata\local\programs\python\python35\lib\site-packages\scrapy\middleware.py", line 58, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "c:\users\edit-000127\appdata\local\programs\python\python35\lib\site-packages\scrapy\middleware.py", line 36, in from_settings
+    mw = mwcls.from_crawler(crawler)
+  File "c:\users\edit-000127\appdata\local\programs\python\python35\lib\site-packages\scrapy\downloadermiddlewares\useragent.py", line 14, in from_crawler
+    o = cls(crawler.settings['USER_AGENT'])
+  File "F:\daima\dazhongdianping\dianping-for-github\dianping\downloadermiddlewares\rotate_useragent.py", line 18, in __init__
+    self.readuseragentfile()
+  File "F:\daima\dazhongdianping\dianping-for-github\dianping\downloadermiddlewares\rotate_useragent.py", line 28, in readuseragentfile
+    with open(self.useragentFile) as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'dianping/utils/useragentlist.txt'
+2017-02-23 10:26:11 [scrapy.utils.log] INFO: Scrapy 1.3.0 started (bot: dianping)
+2017-02-23 10:26:11 [scrapy.utils.log] INFO: Overridden settings: {'DUPEFILTER_CLASS': 'dianping.dupefilters.VerboseRFPDupeFilter', 'NEWSPIDER_MODULE': 'dianping.spiders', 'RETRY_HTTP_CODES': [404, 408, 500, 502, 503, 504], 'DOWNLOAD_TIMEOUT': 10, 'BOT_NAME': 'dianping', 'CONCURRENT_REQUESTS': 20, 'RETRY_TIMES': 6, 'COOKIES_ENABLED': False, 'SPIDER_MODULES': ['dianping.spiders'], 'LOG_FILE': 'log.txt'}
+2017-02-23 10:26:11 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logstats.LogStats']
+2017-02-23 10:26:12 [root] INFO: Starting getting fresh proxies
+2017-02-23 10:26:12 [root] INFO: [*******] 111 Current unique proxy condition
+2017-02-23 10:26:12 [root] INFO:       Proxy              | Success  |     Total.Request      | Percentage      | label
+2017-02-23 10:26:12 [root] INFO: http://12.33.254.195:3128        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://219.138.139.174:8000        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://120.27.113.72:8888        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://124.88.67.18:843        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://171.107.32.241:8118        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://50.93.197.98:1080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://151.80.88.44:3128        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://203.145.130.194:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://222.33.192.238:8118        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://187.53.61.105:3128        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://120.52.73.97:8088        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://124.88.67.10:83        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://118.189.157.9:3128        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://119.29.40.194:8888        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://5.189.152.50:3128        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://50.93.197.102:1080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://183.61.236.53:3128        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://121.41.8.7:8888        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://183.61.236.54:3128        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://124.88.67.17:843        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://124.88.67.39:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://183.95.80.165:8080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://50.93.197.99:1080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://121.14.6.236:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://124.88.67.39:843        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://50.93.200.212:1080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://124.88.67.54:82        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://124.88.67.81:81        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://218.17.43.228:3128        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://197.97.146.62:8080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://154.16.127.161:1080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://36.66.113.74:8080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://124.88.67.24:843        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://125.88.74.122:83        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://122.189.237.148:8118        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://124.88.67.17:82        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://185.28.193.95:8080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://124.88.67.32:83        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://120.52.73.98:90        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://221.226.82.130:8998        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://107.155.113.159:1080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://178.73.195.162:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://50.93.203.123:1080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://183.61.236.55:3128        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://125.162.208.252:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://130.207.85.164:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://175.103.38.30:8081        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://124.88.67.10:843        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://202.73.51.102:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://61.191.41.130:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://125.166.224.142:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://52.65.154.142:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://152.160.35.171:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://95.54.210.32:8080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://124.88.67.19:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://58.221.38.170:8080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://91.217.34.137:8080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://196.22.241.52:8080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://79.172.0.198:8080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://51.254.101.105:3128        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://40.68.88.27:8080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://124.88.67.19:843        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://124.133.230.254:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://103.253.146.205:3128        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://179.124.136.98:3128        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://121.193.143.249:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://47.90.74.111:8088        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://45.76.128.13:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://47.88.11.13:8088        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://36.80.228.203:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://163.121.188.3:8080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://36.80.235.14:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://50.93.203.13:1080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://96.239.193.241:8080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://122.226.189.229:138        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://14.125.51.113:8888        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://121.17.54.44:8998        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://107.174.68.214:1080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://46.167.210.2:8118        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://152.92.200.2:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://180.254.89.236:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://116.209.84.116:8118        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://124.88.67.20:843        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://50.93.200.90:1080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://190.116.175.142:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://137.135.166.225:8124        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://115.159.185.186:8088        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://45.32.42.133:8081        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://221.195.53.117:8998        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://124.88.67.81:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://5.2.74.91:1080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://50.93.204.108:1080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://70.55.222.104:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://50.93.197.100:1080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://124.88.67.14:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://5.2.74.224:1080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://106.185.39.152:8080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://122.212.129.9:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://47.89.44.105:8080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://183.239.194.148:8080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://124.88.67.34:81        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://124.88.67.34:843        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://168.63.20.19:8138        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://54.255.211.131:8118        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://125.166.225.18:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://95.165.165.27:8080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://120.52.73.97:8081        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://47.89.41.164:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://39.186.183.213:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://50.93.203.132:1080        100              100                100.00%       valid
+2017-02-23 10:26:12 [root] INFO: http://194.185.104.166:80        100              100                100.00%       valid
+2017-02-23 10:26:12 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'dianping.downloadermiddlewares.rotate_useragent.RotateUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'dianping.downloadermiddlewares.rotateproxy.ProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-02-23 10:26:12 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-02-23 10:26:12 [scrapy.middleware] INFO: Enabled item pipelines:
+['dianping.pipelines.DianpingPipeline']
+2017-02-23 10:26:12 [scrapy.core.engine] INFO: Spider opened
+2017-02-23 10:26:12 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-02-23 10:26:12 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-02-23 10:26:12 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r14> using proxy:http://54.255.211.131:8118
+2017-02-23 10:26:12 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r17> using proxy:http://219.138.139.174:8000
+2017-02-23 10:26:12 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r15> using proxy:http://163.121.188.3:8080
+2017-02-23 10:26:12 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r16> using proxy:http://187.53.61.105:3128
+2017-02-23 10:26:12 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r20> using proxy:http://183.61.236.54:3128
+2017-02-23 10:26:12 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r5952> using proxy:http://124.88.67.18:843
+2017-02-23 10:26:12 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r5950> using proxy:http://124.88.67.32:83
+2017-02-23 10:26:12 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r5951> using proxy:http://168.63.20.19:8138
+2017-02-23 10:26:12 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r328> using proxy:http://61.191.41.130:80
+2017-02-23 10:26:12 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r9158> using proxy:http://61.191.41.130:80
+2017-02-23 10:26:12 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r27615> using proxy:http://183.61.236.55:3128
+2017-02-23 10:26:12 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r9157> using proxy:http://125.162.208.252:80
+2017-02-23 10:26:12 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r27614> using proxy:http://50.93.197.98:1080
+2017-02-23 10:26:12 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r27616> using proxy:http://168.63.20.19:8138
+2017-02-23 10:26:12 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193c434> using proxy:http://124.88.67.19:80
+2017-02-23 10:26:12 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193c435> using proxy:http://218.17.43.228:3128
+2017-02-23 10:26:12 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r14> using proxy:http://120.27.113.72:8888
+2017-02-23 10:26:12 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r17> using proxy:http://124.88.67.19:80
+2017-02-23 10:26:12 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r15> using proxy:http://107.155.113.159:1080
+2017-02-23 10:26:12 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r16> using proxy:http://40.68.88.27:8080
+2017-02-23 10:26:13 [root] INFO: Proxy: http://219.138.139.174:8000 meet 403 Forbidden 
+2017-02-23 10:26:13 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r17> using proxy:http://95.54.210.32:8080
+2017-02-23 10:26:13 [root] INFO: Good proxy:http://124.88.67.32:83 for processing <200 http://www.dianping.com/search/category/2/70/g193r5950>
+2017-02-23 10:26:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/search/category/2/70/g193r5950> (referer: None)
+2017-02-23 10:26:13 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r20> using proxy:http://194.185.104.166:80
+2017-02-23 10:26:13 [root] INFO: Good proxy:http://124.88.67.18:843 for processing <200 http://www.dianping.com/search/category/2/70/g193r5952>
+2017-02-23 10:26:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/search/category/2/70/g193r5952> (referer: None)
+2017-02-23 10:26:13 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r5952> using proxy:http://124.88.67.14:80
+2017-02-23 10:26:14 [root] INFO: Good proxy:http://61.191.41.130:80 for processing <200 http://www.dianping.com/search/category/2/70/g193r9158>
+2017-02-23 10:26:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/search/category/2/70/g193r9158> (referer: None)
+2017-02-23 10:26:14 [root] INFO: Request <GET http://www.dianping.com/shop/3009448> using proxy:http://124.88.67.20:843
+2017-02-23 10:26:14 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/shop/68074594>
+2017-02-23 10:26:15 [root] INFO: Good proxy:http://61.191.41.130:80 for processing <200 http://www.dianping.com/search/category/2/70/g193r328>
+2017-02-23 10:26:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/search/category/2/70/g193r328> (referer: None)
+2017-02-23 10:26:15 [root] INFO: Request <GET http://www.dianping.com/shop/67694527> using proxy:http://116.209.84.116:8118
+2017-02-23 10:26:17 [root] INFO: Good proxy:http://50.93.197.98:1080 for processing <200 http://www.dianping.com/search/category/2/70/g193r27614>
+2017-02-23 10:26:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/search/category/2/70/g193r27614> (referer: None)
+2017-02-23 10:26:17 [root] INFO: Request <GET http://www.dianping.com/shop/23039523> using proxy:http://121.17.54.44:8998
+2017-02-23 10:26:17 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/shop/4722393>
+2017-02-23 10:26:22 [root] INFO: Failed(:exception) proxy:http://54.255.211.131:8118 for processing http://www.dianping.com/search/category/2/70/g193r14
+2017-02-23 10:26:22 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r14> using proxy:http://222.33.192.238:8118
+2017-02-23 10:26:22 [root] INFO: Failed(:exception) proxy:http://163.121.188.3:8080 for processing http://www.dianping.com/search/category/2/70/g193r15
+2017-02-23 10:26:22 [root] INFO: Failed(:exception) proxy:http://187.53.61.105:3128 for processing http://www.dianping.com/search/category/2/70/g193r16
+2017-02-23 10:26:22 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r16> using proxy:http://46.167.210.2:8118
+2017-02-23 10:26:22 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r15> using proxy:http://183.61.236.54:3128
+2017-02-23 10:26:22 [root] INFO: Failed(:exception) proxy:http://183.61.236.54:3128 for processing http://www.dianping.com/search/category/2/70/g193r20
+2017-02-23 10:26:22 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r20> using proxy:http://179.124.136.98:3128
+2017-02-23 10:26:22 [root] INFO: Failed(:exception) proxy:http://168.63.20.19:8138 for processing http://www.dianping.com/search/category/2/70/g193r5951
+2017-02-23 10:26:22 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r5951> using proxy:http://202.73.51.102:80
+2017-02-23 10:26:23 [root] INFO: Failed(:exception) proxy:http://183.61.236.55:3128 for processing http://www.dianping.com/search/category/2/70/g193r27615
+2017-02-23 10:26:23 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r27615> using proxy:http://187.53.61.105:3128
+2017-02-23 10:26:24 [root] INFO: Failed(:exception) proxy:http://40.68.88.27:8080 for processing http://www.dianping.com/search/category/2/70/g27761r16
+2017-02-23 10:26:24 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r16> using proxy:http://178.73.195.162:80
+2017-02-23 10:26:24 [root] INFO: Failed(:exception) proxy:http://125.162.208.252:80 for processing http://www.dianping.com/search/category/2/70/g193r9157
+2017-02-23 10:26:24 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r9157> using proxy:http://124.88.67.14:80
+2017-02-23 10:26:27 [root] INFO: Failed(:exception) proxy:http://168.63.20.19:8138 for processing http://www.dianping.com/search/category/2/70/g193r27616
+2017-02-23 10:26:27 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r27616> using proxy:http://58.221.38.170:8080
+2017-02-23 10:26:28 [root] INFO: Good proxy:http://124.88.67.14:80 for processing <200 http://www.dianping.com/search/category/2/70/g27761r5952>
+2017-02-23 10:26:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/search/category/2/70/g27761r5952> (referer: None)
+2017-02-23 10:26:28 [root] INFO: Request <GET http://www.dianping.com/shop/13681035> using proxy:http://58.221.38.170:8080
+2017-02-23 10:26:32 [root] INFO: Good proxy:http://218.17.43.228:3128 for processing <200 http://www.dianping.com/search/category/2/70/g193c435>
+2017-02-23 10:26:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/search/category/2/70/g193c435> (referer: None) ['partial']
+2017-02-23 10:26:32 [root] INFO: Request <GET http://www.dianping.com/shop/21594849> using proxy:http://137.135.166.225:8124
+2017-02-23 10:26:32 [root] INFO: Failed(:exception) proxy:http://124.88.67.19:80 for processing http://www.dianping.com/search/category/2/70/g193c434
+2017-02-23 10:26:32 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193c434> using proxy:http://124.88.67.81:81
+2017-02-23 10:26:32 [root] INFO: Failed(:exception) proxy:http://120.27.113.72:8888 for processing http://www.dianping.com/search/category/2/70/g27761r14
+2017-02-23 10:26:32 [root] INFO: Failed(:exception) proxy:http://124.88.67.19:80 for processing http://www.dianping.com/search/category/2/70/g27761r17
+2017-02-23 10:26:32 [root] INFO: Failed(:exception) proxy:http://107.155.113.159:1080 for processing http://www.dianping.com/search/category/2/70/g27761r15
+2017-02-23 10:26:32 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r15> using proxy:http://50.93.200.212:1080
+2017-02-23 10:26:32 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r17> using proxy:http://39.186.183.213:80
+2017-02-23 10:26:32 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r14> using proxy:http://45.76.128.13:80
+2017-02-23 10:26:33 [root] INFO: Proxy http://46.167.210.2:8118 meet faked 500 Internal Server Error 
+2017-02-23 10:26:33 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.dianping.com/search/category/2/70/g193r16> (failed 1 times): 500 Internal Server Error
+2017-02-23 10:26:33 [root] INFO: Request <GET http://www.dianping.com/shop/48799663> using proxy:http://124.88.67.17:843
+2017-02-23 10:26:34 [root] INFO: Failed(:exception) proxy:http://95.54.210.32:8080 for processing http://www.dianping.com/search/category/2/70/g193r17
+2017-02-23 10:26:34 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r17> using proxy:http://190.116.175.142:80
+2017-02-23 10:26:34 [root] INFO: Failed(:exception) proxy:http://194.185.104.166:80 for processing http://www.dianping.com/search/category/2/70/g27761r20
+2017-02-23 10:26:34 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r20> using proxy:http://183.61.236.55:3128
+2017-02-23 10:26:35 [root] INFO: Failed(:exception) proxy:http://179.124.136.98:3128 for processing http://www.dianping.com/search/category/2/70/g193r20
+2017-02-23 10:26:35 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r20> using proxy:http://39.186.183.213:80
+2017-02-23 10:26:36 [root] INFO: Good proxy:http://222.33.192.238:8118 for processing <200 http://www.dianping.com/search/category/2/70/g193r14>
+2017-02-23 10:26:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/search/category/2/70/g193r14> (referer: None)
+2017-02-23 10:26:36 [root] INFO: Request <GET http://www.dianping.com/shop/4734632> using proxy:http://46.167.210.2:8118
+2017-02-23 10:26:37 [root] INFO: Good proxy:http://124.88.67.14:80 for processing <200 http://www.dianping.com/search/category/2/70/g193r9157>
+2017-02-23 10:26:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/search/category/2/70/g193r9157> (referer: None)
+2017-02-23 10:26:37 [root] INFO: Request <GET http://www.dianping.com/shop/22673405> using proxy:http://171.107.32.241:8118
+2017-02-23 10:26:37 [root] INFO: Good proxy:http://58.221.38.170:8080 for processing <200 http://www.dianping.com/search/category/2/70/g193r27616>
+2017-02-23 10:26:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/search/category/2/70/g193r27616> (referer: None)
+2017-02-23 10:26:37 [root] INFO: Request <GET http://www.dianping.com/shop/72476071> using proxy:http://103.253.146.205:3128
+2017-02-23 10:26:38 [root] INFO: Good proxy:http://58.221.38.170:8080 for processing <200 http://www.dianping.com/shop/13681035>
+2017-02-23 10:26:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/13681035> (referer: http://www.dianping.com/search/category/2/70/g193r27614)
+2017-02-23 10:26:38 [root] INFO: Request <GET http://www.dianping.com/shop/79383741> using proxy:http://124.88.67.81:81
+2017-02-23 10:26:38 [py.warnings] WARNING: c:\users\edit-000127\appdata\local\programs\python\python35\lib\site-packages\pymysql\cursors.py:166: Warning: (1366, "Incorrect integer value: 'Null' for column 'map_type' at row 1")
+  result = self._query(query)
+
+2017-02-23 10:26:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/13681035>
+{'addr': ['熙旺中心A1001市'],
+ 'branch': '0',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '亲子摄影',
+ 'commentNum': '',
+ 'hour': ['10:00-22:00'],
+ 'info': 'nosomething',
+ 'map_type': 'Null',
+ 'navigation': ['北京亲子', '门头沟区', '亲子摄影', '儿童摄影'],
+ 'nearby_shops': ['坦克大战(儿童遥控场地)', '萌宝地带玩具体验馆', '极拍儿童摄影(熙旺中心店)'],
+ 'original_latitude': '39.93527',
+ 'original_longitude': '116.11342',
+ 'overallRate': ['该商户暂无星级'],
+ 'phone': ['010--61805856'],
+ 'picurl': ['//qcloud.dpfile.com/pc/gNJUV9t1w22QP7sYezZ6LCmeXIAGwAiQ7pHPKa-Um08WU2ewlIlUciP7vZWxkXpm.jpg'],
+ 'poi': 'HEDUGRZVVBTIFS',
+ 'price': '-',
+ 'region': '门头沟区',
+ 'shopName': '花之恋婚纱摄影店(门头沟店)',
+ 'star1': '',
+ 'star2': '',
+ 'star3': '',
+ 'star4': '',
+ 'star5': '',
+ 'subregion': '',
+ 'tags': ['儿童摄影'],
+ 'traffic': ['尚无公交信息'],
+ 'url': 'http://www.dianping.com/shop/13681035'}
+2017-02-23 10:26:38 [root] INFO: Failed(:exception) proxy:http://124.88.67.20:843 for processing http://www.dianping.com/shop/3009448
+2017-02-23 10:26:38 [root] INFO: Request <GET http://www.dianping.com/shop/3009448> using proxy:http://130.207.85.164:80
+2017-02-23 10:26:42 [root] INFO: Failed(:exception) proxy:http://116.209.84.116:8118 for processing http://www.dianping.com/shop/67694527
+2017-02-23 10:26:42 [root] INFO: Request <GET http://www.dianping.com/shop/67694527> using proxy:http://171.107.32.241:8118
+2017-02-23 10:26:42 [root] INFO: Failed(:exception) proxy:http://121.17.54.44:8998 for processing http://www.dianping.com/shop/23039523
+2017-02-23 10:26:42 [root] INFO: Request <GET http://www.dianping.com/shop/23039523> using proxy:http://107.155.113.159:1080
+2017-02-23 10:26:42 [root] INFO: Failed(:exception) proxy:http://183.61.236.54:3128 for processing http://www.dianping.com/search/category/2/70/g193r15
+2017-02-23 10:26:42 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r15> using proxy:http://121.193.143.249:80
+2017-02-23 10:26:44 [root] INFO: Good proxy:http://202.73.51.102:80 for processing <200 http://www.dianping.com/search/category/2/70/g193r5951>
+2017-02-23 10:26:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/search/category/2/70/g193r5951> (referer: None) ['partial']
+2017-02-23 10:26:44 [root] INFO: Request <GET http://www.dianping.com/shop/40931965> using proxy:http://50.93.197.100:1080
+2017-02-23 10:26:44 [root] INFO: Good proxy:http://124.88.67.17:843 for processing <200 http://www.dianping.com/shop/48799663>
+2017-02-23 10:26:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/48799663> (referer: http://www.dianping.com/search/category/2/70/g193c435)
+2017-02-23 10:26:44 [root] INFO: Request <GET http://www.dianping.com/shop/67304514> using proxy:http://51.254.101.105:3128
+2017-02-23 10:26:44 [root] INFO: Failed(:exception) proxy:http://187.53.61.105:3128 for processing http://www.dianping.com/search/category/2/70/g193r27615
+2017-02-23 10:26:44 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r27615> using proxy:http://124.88.67.24:843
+2017-02-23 10:26:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/48799663>
+{'addr': '',
+ 'branch': '0',
+ 'channel': '延庆区亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '亲子摄影',
+ 'commentNum': '',
+ 'map_type': 'Null',
+ 'navigation': ['延庆区亲子', '延庆县其他', '亲子摄影', '儿童摄影'],
+ 'nearby_group': '',
+ 'nearby_shops': '',
+ 'original_latitude': '40.46838',
+ 'original_longitude': '115.97254',
+ 'overallRate': ['该商户暂无星级'],
+ 'phone': '',
+ 'picurl': ['//qcloud.dpfile.com/pc/dPsjmzZjONrcWtggluEnII3neCx6nVn9WGFoNDhSvVjFZDTpY1jTPBtBiShMGWuC.jpg'],
+ 'poi': 'HDDGBGZVVSFSTF',
+ 'price': '-',
+ 'region': '延庆县',
+ 'shopName': '爱育幼童儿童全脑潜能教育中心(延庆分中心)',
+ 'star1': '',
+ 'star2': '',
+ 'star3': '',
+ 'star4': '',
+ 'star5': '',
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': 'Null',
+ 'url': 'http://www.dianping.com/shop/48799663'}
+2017-02-23 10:26:45 [root] INFO: Failed(:exception) proxy:http://178.73.195.162:80 for processing http://www.dianping.com/search/category/2/70/g27761r16
+2017-02-23 10:26:45 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r16> using proxy:http://221.226.82.130:8998
+2017-02-23 10:26:48 [root] INFO: Failed(:exception) proxy:http://137.135.166.225:8124 for processing http://www.dianping.com/shop/21594849
+2017-02-23 10:26:48 [root] INFO: Request <GET http://www.dianping.com/shop/21594849> using proxy:http://221.226.82.130:8998
+2017-02-23 10:26:48 [root] INFO: Failed(:exception) proxy:http://124.88.67.81:81 for processing http://www.dianping.com/search/category/2/70/g193c434
+2017-02-23 10:26:48 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193c434> using proxy:http://124.88.67.34:843
+2017-02-23 10:26:52 [root] INFO: Failed(:exception) proxy:http://50.93.200.212:1080 for processing http://www.dianping.com/search/category/2/70/g27761r15
+2017-02-23 10:26:52 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r15> using proxy:http://58.221.38.170:8080
+2017-02-23 10:26:52 [root] INFO: Failed(:exception) proxy:http://39.186.183.213:80 for processing http://www.dianping.com/search/category/2/70/g27761r17
+2017-02-23 10:26:52 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r17> using proxy:http://95.54.210.32:8080
+2017-02-23 10:26:52 [root] INFO: Failed(:exception) proxy:http://45.76.128.13:80 for processing http://www.dianping.com/search/category/2/70/g27761r14
+2017-02-23 10:26:52 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r14> using proxy:http://122.226.189.229:138
+2017-02-23 10:26:53 [root] INFO: Failed(:exception) proxy:http://103.253.146.205:3128 for processing http://www.dianping.com/shop/72476071
+2017-02-23 10:26:53 [root] INFO: Request <GET http://www.dianping.com/shop/72476071> using proxy:http://121.41.8.7:8888
+2017-02-23 10:26:54 [root] INFO: Failed(:exception) proxy:http://190.116.175.142:80 for processing http://www.dianping.com/search/category/2/70/g193r17
+2017-02-23 10:26:54 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r17> using proxy:http://154.16.127.161:1080
+2017-02-23 10:26:54 [root] INFO: Failed(:exception) proxy:http://183.61.236.55:3128 for processing http://www.dianping.com/search/category/2/70/g27761r20
+2017-02-23 10:26:54 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r20> using proxy:http://124.88.67.17:82
+2017-02-23 10:26:55 [root] INFO: Good proxy:http://121.193.143.249:80 for processing <200 http://www.dianping.com/search/category/2/70/g193r15>
+2017-02-23 10:26:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/search/category/2/70/g193r15> (referer: None)
+2017-02-23 10:26:55 [root] INFO: Request <GET http://www.dianping.com/shop/19568163> using proxy:http://50.93.197.98:1080
+2017-02-23 10:26:55 [root] INFO: Failed(:exception) proxy:http://39.186.183.213:80 for processing http://www.dianping.com/search/category/2/70/g193r20
+2017-02-23 10:26:55 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r20> using proxy:http://58.221.38.170:8080
+2017-02-23 10:26:56 [root] INFO: Proxy: http://51.254.101.105:3128 meet 403 Forbidden 
+2017-02-23 10:26:56 [root] INFO: Request <GET http://www.dianping.com/shop/67304514> using proxy:http://124.88.67.81:80
+2017-02-23 10:26:57 [root] INFO: Good proxy:http://124.88.67.24:843 for processing <200 http://www.dianping.com/search/category/2/70/g193r27615>
+2017-02-23 10:26:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/search/category/2/70/g193r27615> (referer: None)
+2017-02-23 10:26:57 [root] INFO: Request <GET http://www.dianping.com/shop/17683686> using proxy:http://5.2.74.224:1080
+2017-02-23 10:26:57 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/shop/57519018>
+2017-02-23 10:26:57 [root] INFO: Good proxy:http://50.93.197.100:1080 for processing <200 http://www.dianping.com/shop/40931965>
+2017-02-23 10:26:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/40931965> (referer: http://www.dianping.com/search/category/2/70/g193r27616)
+2017-02-23 10:26:57 [root] INFO: Request <GET http://www.dianping.com/shop/15913196> using proxy:http://124.88.67.34:81
+2017-02-23 10:26:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/40931965>
+{'addr': ['平程路橱柜洁具店旁'],
+ 'branch': '0',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '亲子摄影',
+ 'commentNum': '',
+ 'hour': ['尚无营业时间'],
+ 'info': 'nosomething',
+ 'map_type': 'Null',
+ 'navigation': ['北京亲子', '平谷区', '亲子摄影', '儿童摄影'],
+ 'nearby_shops': ['童鑫母婴会所', '小红帽艺术幼儿园', '金色童年儿童俱乐部'],
+ 'original_latitude': '40.15275',
+ 'original_longitude': '117.11166',
+ 'overallRate': ['该商户暂无星级'],
+ 'phone': ['13241582858'],
+ 'picurl': ['//qcloud.dpfile.com/pc/gNJUV9t1w22QP7sYezZ6LCmeXIAGwAiQ7pHPKa-Um08WU2ewlIlUciP7vZWxkXpm.jpg'],
+ 'poi': 'HFGVGEZVWWHGJQ',
+ 'price': '-',
+ 'region': '平谷区',
+ 'shopName': '儿童摄影',
+ 'star1': '',
+ 'star2': '',
+ 'star3': '',
+ 'star4': '',
+ 'star5': '',
+ 'subregion': '',
+ 'tags': ['儿童摄影'],
+ 'traffic': ['尚无公交信息'],
+ 'url': 'http://www.dianping.com/shop/40931965'}
+2017-02-23 10:26:58 [root] INFO: Failed(:exception) proxy:http://46.167.210.2:8118 for processing http://www.dianping.com/shop/4734632
+2017-02-23 10:26:58 [root] INFO: Request <GET http://www.dianping.com/shop/4734632> using proxy:http://50.93.197.100:1080
+2017-02-23 10:26:58 [root] INFO: Failed(:exception) proxy:http://171.107.32.241:8118 for processing http://www.dianping.com/shop/22673405
+2017-02-23 10:26:58 [root] INFO: Request <GET http://www.dianping.com/shop/22673405> using proxy:http://183.95.80.165:8080
+2017-02-23 10:26:58 [root] INFO: Good proxy:http://221.226.82.130:8998 for processing <200 http://www.dianping.com/shop/21594849>
+2017-02-23 10:26:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/21594849> (referer: http://www.dianping.com/search/category/2/70/g27761r5952)
+2017-02-23 10:26:58 [root] INFO: Request <GET http://www.dianping.com/shop/26964050> using proxy:http://180.254.89.236:80
+2017-02-23 10:26:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/21594849>
+{'addr': ['欣宁街15号荟聚购物中心3楼'],
+ 'branch': '6',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '早教中心',
+ 'commentNum': '138',
+ 'hour': ['早10:00点到晚上20：30'],
+ 'info': 'nosomething',
+ 'map_type': 'Null',
+ 'navigation': ['北京亲子', '大兴区', '西红门', '早教中心'],
+ 'nearby_shops': ['小鬼当佳儿童摄影-西红门店(...', '美吉姆北京大兴宜家中心(荟...', '瑞思学科英语(荟聚购物中心...'],
+ 'original_latitude': '39.78914',
+ 'original_longitude': '116.32649',
+ 'overallRate': ['准四星商户'],
+ 'phone': ['010--60200358'],
+ 'picurl': ['//p0.meituan.net/apiback/76d8b3b5ac99b5d40a7c3f9b6d296e8a1269701.jpg%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HETJSAZVVDGRSI',
+ 'price': '￥7844',
+ 'region': '大兴区',
+ 'shopName': '小小运动馆(荟聚购物中心西红门店)',
+ 'star1': '7',
+ 'star2': '2',
+ 'star3': '4',
+ 'star4': '7',
+ 'star5': '18',
+ 'subregion': '',
+ 'tags': ['早教中心', '综合教育', '西红门'],
+ 'traffic': ['地铁四号线西红门站下车，出地铁A口，荟聚购物中心三层'],
+ 'url': 'http://www.dianping.com/shop/21594849'}
+2017-02-23 10:26:59 [root] INFO: Good proxy:http://124.88.67.34:843 for processing <200 http://www.dianping.com/search/category/2/70/g193c434>
+2017-02-23 10:26:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/search/category/2/70/g193c434> (referer: None)
+2017-02-23 10:26:59 [root] INFO: Request <GET http://www.dianping.com/shop/67025148> using proxy:http://50.93.197.98:1080
+2017-02-23 10:27:02 [root] INFO: Good proxy:http://58.221.38.170:8080 for processing <200 http://www.dianping.com/search/category/2/70/g27761r15>
+2017-02-23 10:27:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/search/category/2/70/g27761r15> (referer: None)
+2017-02-23 10:27:02 [root] INFO: Request <GET http://www.dianping.com/shop/49316522> using proxy:http://179.124.136.98:3128
+2017-02-23 10:27:02 [root] INFO: Failed(:exception) proxy:http://124.88.67.81:81 for processing http://www.dianping.com/shop/79383741
+2017-02-23 10:27:02 [root] INFO: Request <GET http://www.dianping.com/shop/79383741> using proxy:http://50.93.197.102:1080
+2017-02-23 10:27:02 [root] INFO: Failed(:exception) proxy:http://130.207.85.164:80 for processing http://www.dianping.com/shop/3009448
+2017-02-23 10:27:02 [root] INFO: Request <GET http://www.dianping.com/shop/3009448> using proxy:http://194.185.104.166:80
+2017-02-23 10:27:03 [root] INFO: Failed(:exception) proxy:http://121.41.8.7:8888 for processing http://www.dianping.com/shop/72476071
+2017-02-23 10:27:03 [root] INFO: Request <GET http://www.dianping.com/shop/72476071> using proxy:http://50.93.203.132:1080
+2017-02-23 10:27:03 [root] INFO: Good proxy:http://124.88.67.17:82 for processing <200 http://www.dianping.com/search/category/2/70/g27761r20>
+2017-02-23 10:27:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/search/category/2/70/g27761r20> (referer: None)
+2017-02-23 10:27:03 [root] INFO: Request <GET http://www.dianping.com/shop/50342105> using proxy:http://50.93.200.90:1080
+2017-02-23 10:27:03 [root] INFO: Good proxy:http://58.221.38.170:8080 for processing <200 http://www.dianping.com/search/category/2/70/g193r20>
+2017-02-23 10:27:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/search/category/2/70/g193r20> (referer: None)
+2017-02-23 10:27:03 [root] INFO: Request <GET http://www.dianping.com/shop/6077562> using proxy:http://190.116.175.142:80
+2017-02-23 10:27:03 [root] INFO: Failed(:exception) proxy:http://171.107.32.241:8118 for processing http://www.dianping.com/shop/67694527
+2017-02-23 10:27:03 [root] INFO: Request <GET http://www.dianping.com/shop/67694527> using proxy:http://50.93.200.90:1080
+2017-02-23 10:27:04 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/shop/6065681>
+2017-02-23 10:27:04 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/shop/21341490>
+2017-02-23 10:27:04 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/shop/3009448>
+2017-02-23 10:27:04 [root] INFO: Failed(:exception) proxy:http://107.155.113.159:1080 for processing http://www.dianping.com/shop/23039523
+2017-02-23 10:27:04 [root] INFO: Request <GET http://www.dianping.com/shop/23039523> using proxy:http://152.92.200.2:80
+2017-02-23 10:27:05 [root] INFO: Failed(:exception) proxy:http://5.2.74.224:1080 for processing http://www.dianping.com/shop/17683686
+2017-02-23 10:27:05 [root] INFO: Request <GET http://www.dianping.com/shop/17683686> using proxy:http://50.93.197.102:1080
+2017-02-23 10:27:06 [root] INFO: Good proxy:http://124.88.67.34:81 for processing <200 http://www.dianping.com/shop/15913196>
+2017-02-23 10:27:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/15913196> (referer: http://www.dianping.com/search/category/2/70/g193r27615)
+2017-02-23 10:27:06 [root] INFO: Request <GET http://www.dianping.com/shop/58445973> using proxy:http://50.93.203.13:1080
+2017-02-23 10:27:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/15913196>
+{'addr': ['南大街康馨家园大门东18米'],
+ 'branch': '0',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '亲子摄影',
+ 'commentNum': '',
+ 'hour': ['8:30-17:30'],
+ 'info': 'nosomething',
+ 'map_type': 'Null',
+ 'navigation': ['北京亲子', '怀柔区', '亲子摄影', '儿童摄影'],
+ 'nearby_shops': '',
+ 'original_latitude': '40.31468',
+ 'original_longitude': '116.64926',
+ 'overallRate': ['该商户暂无星级'],
+ 'phone': ['010--69649725'],
+ 'picurl': ['//qcloud.dpfile.com/pc/gNJUV9t1w22QP7sYezZ6LCmeXIAGwAiQ7pHPKa-Um08WU2ewlIlUciP7vZWxkXpm.jpg'],
+ 'poi': 'HEHRIBZVWICARO',
+ 'price': '-',
+ 'region': '怀柔区',
+ 'shopName': '贝瑞儿童摄影',
+ 'star1': '',
+ 'star2': '',
+ 'star3': '',
+ 'star4': '',
+ 'star5': '',
+ 'subregion': '',
+ 'tags': ['儿童摄影'],
+ 'traffic': ['尚无公交信息'],
+ 'url': 'http://www.dianping.com/shop/15913196'}
+2017-02-23 10:27:06 [root] INFO: Good proxy:http://183.95.80.165:8080 for processing <200 http://www.dianping.com/shop/22673405>
+2017-02-23 10:27:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/22673405> (referer: http://www.dianping.com/search/category/2/70/g193c435)
+2017-02-23 10:27:06 [root] INFO: Request <GET http://www.dianping.com/shop/21783117> using proxy:http://163.121.188.3:8080
+2017-02-23 10:27:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/22673405>
+{'addr': '',
+ 'branch': '0',
+ 'channel': '延庆区亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '亲子摄影',
+ 'commentNum': '1',
+ 'map_type': 'Null',
+ 'navigation': ['延庆区亲子', '延庆县其他', '亲子摄影', '儿童摄影'],
+ 'nearby_group': '',
+ 'nearby_shops': '',
+ 'original_latitude': '40.46574',
+ 'original_longitude': '115.98109',
+ 'overallRate': ['三星商户'],
+ 'phone': '',
+ 'picurl': ['//qcloud.dpfile.com/pc/jzeN2xlmjolfgW7aEI_BIprejhhtZ_plHxVD1umWdztUaPFUdWBGlD8PptObYUej.jpg'],
+ 'poi': 'HDDRIDZVVSIAST',
+ 'price': '-',
+ 'region': '延庆县',
+ 'shopName': '多米儿童摄影',
+ 'star1': '',
+ 'star2': '',
+ 'star3': '',
+ 'star4': '',
+ 'star5': '',
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': 'Null',
+ 'url': 'http://www.dianping.com/shop/22673405'}
+2017-02-23 10:27:07 [root] INFO: Good proxy:http://50.93.197.98:1080 for processing <200 http://www.dianping.com/shop/19568163>
+2017-02-23 10:27:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/19568163> (referer: http://www.dianping.com/search/category/2/70/g193r5951)
+2017-02-23 10:27:07 [root] INFO: Request <GET http://www.dianping.com/shop/6019244> using proxy:http://175.103.38.30:8081
+2017-02-23 10:27:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/19568163>
+{'addr': ['朝阳北路龙湖长楹天街西区3F-01FACEMEMO儿童摄影'],
+ 'branch': '2',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '亲子摄影',
+ 'commentNum': '647',
+ 'hour': ['10:00—22:00'],
+ 'info': 'nosomething',
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '朝阳区', '常营', '亲子摄影', '儿童摄影'],
+ 'nearby_shops': '',
+ 'original_latitude': '39.92518',
+ 'original_longitude': '116.59728',
+ 'overallRate': ['四星商户'],
+ 'phone': ['4000303096-04307'],
+ 'picurl': ['//p0.meituan.net/wedding/7fdfa690bba4adc169d3a8a3cac4cae11068469.jpg%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HEWVFGZVVUFJGL',
+ 'price': '￥6054',
+ 'region': '通州区',
+ 'shopName': 'FACE MEMO德国儿童摄影(长楹天街店)',
+ 'special': ['无隐形消费'],
+ 'star1': '6',
+ 'star2': '1',
+ 'star3': '2',
+ 'star4': '18',
+ 'star5': '620',
+ 'start': ['2014年'],
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': 'Null',
+ 'url': 'http://www.dianping.com/shop/19568163'}
+2017-02-23 10:27:07 [root] INFO: Failed(:exception) proxy:http://221.226.82.130:8998 for processing http://www.dianping.com/search/category/2/70/g27761r16
+2017-02-23 10:27:07 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r16> using proxy:http://5.189.152.50:3128
+2017-02-23 10:27:08 [root] INFO: Failed(:exception) proxy:http://180.254.89.236:80 for processing http://www.dianping.com/shop/26964050
+2017-02-23 10:27:08 [root] INFO: Request <GET http://www.dianping.com/shop/26964050> using proxy:http://121.193.143.249:80
+2017-02-23 10:27:08 [root] INFO: Failed(:exception) proxy:http://95.54.210.32:8080 for processing http://www.dianping.com/search/category/2/70/g27761r17
+2017-02-23 10:27:08 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r17> using proxy:http://58.221.38.170:8080
+2017-02-23 10:27:09 [root] INFO: Failed(:exception) proxy:http://122.226.189.229:138 for processing http://www.dianping.com/search/category/2/70/g27761r14
+2017-02-23 10:27:09 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r14> using proxy:http://79.172.0.198:8080
+2017-02-23 10:27:09 [root] INFO: Good proxy:http://50.93.197.100:1080 for processing <200 http://www.dianping.com/shop/4734632>
+2017-02-23 10:27:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/4734632> (referer: http://www.dianping.com/search/category/2/70/g193c435)
+2017-02-23 10:27:09 [root] INFO: Request <GET http://www.dianping.com/shop/17944333> using proxy:http://203.145.130.194:80
+2017-02-23 10:27:09 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/4734632>
+{'addr': '',
+ 'branch': '0',
+ 'channel': '延庆区亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '亲子摄影',
+ 'commentNum': '7',
+ 'map_type': 'Null',
+ 'navigation': ['延庆区亲子', '延庆县其他', '亲子摄影', '儿童摄影'],
+ 'nearby_group': '',
+ 'nearby_shops': '',
+ 'original_latitude': '40.46168',
+ 'original_longitude': '115.98054',
+ 'overallRate': ['二星商户'],
+ 'phone': '',
+ 'picurl': ['//qcloud.dpfile.com/pc/nFEoOwu5t87IvMiHyvxFJuOSVXwSqMxPCjBEG_FXBCZOMb2xywwWmNDYSOQGpaS6.jpg'],
+ 'poi': 'HDDSUUZVVSGDVO',
+ 'price': '-',
+ 'region': '延庆县',
+ 'shopName': '天使乐园',
+ 'star1': '',
+ 'star2': '',
+ 'star3': '',
+ 'star4': '',
+ 'star5': '',
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': 'Null',
+ 'url': 'http://www.dianping.com/shop/4734632'}
+2017-02-23 10:27:09 [root] INFO: Good proxy:http://50.93.197.98:1080 for processing <200 http://www.dianping.com/shop/67025148>
+2017-02-23 10:27:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/67025148> (referer: http://www.dianping.com/search/category/2/70/g193r27615)
+2017-02-23 10:27:09 [root] INFO: Request <GET http://www.dianping.com/shop/4712901> using proxy:http://221.195.53.117:8998
+2017-02-23 10:27:09 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/67025148>
+{'addr': ['怀柔新新小镇别墅岱南坊06'],
+ 'branch': '0',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '亲子摄影',
+ 'commentNum': '1',
+ 'hour': ['08:30-05:30 周一至周日'],
+ 'info': 'nosomething',
+ 'map_type': 'Null',
+ 'navigation': ['北京亲子', '怀柔区', '庙城', '亲子摄影', '儿童摄影'],
+ 'nearby_shops': '',
+ 'original_latitude': '40.28707',
+ 'original_longitude': '116.63713',
+ 'overallRate': ['该商户暂无星级'],
+ 'phone': ['13691566645'],
+ 'picurl': ['//qcloud.dpfile.com/pc/aMDUMB8lyZYi9eRi2suo5fXnO7Sa8tofoDwY4p7gcNBOIpw6atUCsZP1CVlGMPXg.jpg'],
+ 'poi': 'HEIAICZVWHCIED',
+ 'price': '-',
+ 'region': '怀柔区',
+ 'shopName': '艾咪宝贝儿童摄影',
+ 'star1': '0',
+ 'star2': '0',
+ 'star3': '0',
+ 'star4': '0',
+ 'star5': '1',
+ 'subregion': '',
+ 'tags': ['儿童摄影', '庙城'],
+ 'traffic': ['尚无公交信息'],
+ 'url': 'http://www.dianping.com/shop/67025148'}
+2017-02-23 10:27:11 [root] INFO: Good proxy:http://50.93.197.102:1080 for processing <200 http://www.dianping.com/shop/79383741>
+2017-02-23 10:27:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/79383741> (referer: http://www.dianping.com/search/category/2/70/g193r27616)
+2017-02-23 10:27:11 [root] INFO: Request <GET http://www.dianping.com/shop/19315982> using proxy:http://121.14.6.236:80
+2017-02-23 10:27:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/79383741>
+{'addr': ['农贸街与顺平路交叉口北50米'],
+ 'branch': '0',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '亲子摄影',
+ 'commentNum': '',
+ 'hour': ['尚无营业时间'],
+ 'info': 'nosomething',
+ 'map_type': 'Null',
+ 'navigation': ['北京亲子', '平谷区', '亲子摄影', '儿童摄影'],
+ 'nearby_shops': ['乐智奇趣儿童乐园', '童星宝宝儿童摄影', '快乐娃婴幼儿游泳馆(平谷店)'],
+ 'original_latitude': '40.14608',
+ 'original_longitude': '117.11385',
+ 'overallRate': ['该商户暂无星级'],
+ 'phone': '',
+ 'picurl': ['//p0.meituan.net/shopmainpic/16715f10c5953d68ec0f407eac6ccee710019.jpg%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HFHBUVZVWWFRJU',
+ 'price': '-',
+ 'region': '平谷区',
+ 'shopName': '多丽多儿童摄影',
+ 'star1': '',
+ 'star2': '',
+ 'star3': '',
+ 'star4': '',
+ 'star5': '',
+ 'subregion': '',
+ 'tags': ['儿童摄影'],
+ 'traffic': ['尚无公交信息'],
+ 'url': 'http://www.dianping.com/shop/79383741'}
+2017-02-23 10:27:12 [scrapy.extensions.logstats] INFO: Crawled 27 pages (at 27 pages/min), scraped 10 items (at 10 items/min)
+2017-02-23 10:27:12 [root] INFO: Failed(:exception) proxy:http://154.16.127.161:1080 for processing http://www.dianping.com/search/category/2/70/g193r17
+2017-02-23 10:27:12 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r17> using proxy:http://50.93.204.108:1080
+2017-02-23 10:27:13 [root] INFO: Proxy http://152.92.200.2:80 meet faked 200 OK 
+2017-02-23 10:27:13 [root] INFO: Request <GET http://www.dianping.com/shop/23039523> using proxy:http://152.92.200.2:80
+2017-02-23 10:27:13 [root] INFO: Failed(:exception) proxy:http://124.88.67.81:80 for processing http://www.dianping.com/shop/67304514
+2017-02-23 10:27:13 [root] INFO: Request <GET http://www.dianping.com/shop/67304514> using proxy:http://183.61.236.55:3128
+2017-02-23 10:27:15 [root] INFO: Good proxy:http://50.93.197.102:1080 for processing <200 http://www.dianping.com/shop/17683686>
+2017-02-23 10:27:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/17683686> (referer: http://www.dianping.com/search/category/2/70/g193r15)
+2017-02-23 10:27:15 [root] INFO: Request <GET http://www.dianping.com/shop/76674164> using proxy:http://154.16.127.161:1080
+2017-02-23 10:27:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/17683686>
+{'addr': ['崇文门外大街新世界商场2期8层(近搜秀，国瑞城，米乐星ktv)'],
+ 'branch': '1',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '亲子摄影',
+ 'commentNum': '19',
+ 'hour': ['早9点晚7点'],
+ 'info': 'nosomething',
+ 'map_type': 'Null',
+ 'navigation': ['北京亲子', '东城区', '崇文门', '亲子摄影', '儿童摄影'],
+ 'nearby_shops': ['贝乐学科英语(崇文门店)', '瑞思学科英语(崇文新世界校...', '悠游堂(Poli主题乐园)'],
+ 'original_latitude': '39.89686',
+ 'original_longitude': '116.41789',
+ 'overallRate': ['准四星商户'],
+ 'phone': ['010--67092653'],
+ 'picurl': ['//qcloud.dpfile.com/pc/ZYM24xa5m4RbdKoClVtXEmZESEYBZISniYVO0igftyphg1o1eTNC1g57yyK55gcK.jpg'],
+ 'poi': 'HETDFHZVVIEHDP',
+ 'price': '￥910',
+ 'region': '东城区',
+ 'shopName': '诺克儿童摄影',
+ 'star1': '2',
+ 'star2': '0',
+ 'star3': '0',
+ 'star4': '0',
+ 'star5': '3',
+ 'subregion': '',
+ 'tags': ['亲子摄影', '儿童摄影', '前门', '崇文门'],
+ 'traffic': ['地铁5号2号线崇文门站 116 684 685 25 106 610 花市路口南'],
+ 'url': 'http://www.dianping.com/shop/17683686'}
+2017-02-23 10:27:17 [root] INFO: Failed(:exception) proxy:http://179.124.136.98:3128 for processing http://www.dianping.com/shop/49316522
+2017-02-23 10:27:17 [root] INFO: Request <GET http://www.dianping.com/shop/49316522> using proxy:http://179.124.136.98:3128
+2017-02-23 10:27:18 [root] INFO: Failed(:exception) proxy:http://194.185.104.166:80 for processing http://www.dianping.com/shop/3009448
+2017-02-23 10:27:18 [root] INFO: Request <GET http://www.dianping.com/shop/3009448> using proxy:http://222.33.192.238:8118
+2017-02-23 10:27:19 [root] INFO: Failed(:exception) proxy:http://50.93.203.132:1080 for processing http://www.dianping.com/shop/72476071
+2017-02-23 10:27:19 [root] INFO: Request <GET http://www.dianping.com/shop/72476071> using proxy:http://45.76.128.13:80
+2017-02-23 10:27:19 [root] INFO: Failed(:exception) proxy:http://50.93.200.90:1080 for processing http://www.dianping.com/shop/50342105
+2017-02-23 10:27:19 [root] INFO: Request <GET http://www.dianping.com/shop/50342105> using proxy:http://91.217.34.137:8080
+2017-02-23 10:27:19 [root] INFO: Good proxy:http://58.221.38.170:8080 for processing <200 http://www.dianping.com/search/category/2/70/g27761r17>
+2017-02-23 10:27:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/search/category/2/70/g27761r17> (referer: None)
+2017-02-23 10:27:19 [root] INFO: Request <GET http://www.dianping.com/shop/9068766> using proxy:http://124.88.67.24:843
+2017-02-23 10:27:19 [root] INFO: Good proxy:http://121.193.143.249:80 for processing <200 http://www.dianping.com/shop/26964050>
+2017-02-23 10:27:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/26964050> (referer: http://www.dianping.com/search/category/2/70/g193r27615)
+2017-02-23 10:27:19 [root] INFO: Request <GET http://www.dianping.com/shop/63177206> using proxy:http://96.239.193.241:8080
+2017-02-23 10:27:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/26964050>
+{'addr': ['元宝街'],
+ 'branch': '0',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '亲子摄影',
+ 'commentNum': '2',
+ 'hour': ['每天 8:30-18:00'],
+ 'info': 'nosomething',
+ 'map_type': 'Null',
+ 'navigation': ['北京亲子', '怀柔区', '商业街', '亲子摄影', '儿童摄影'],
+ 'nearby_shops': ['晨曦儿童摄影(怀柔店)', '新悦百货优优糖儿童乐园', '悦宝园早教怀柔中心'],
+ 'original_latitude': '40.31454',
+ 'original_longitude': '116.63366',
+ 'overallRate': ['该商户暂无星级'],
+ 'phone': ['18609538646'],
+ 'picurl': ['//qcloud.dpfile.com/pc/PAJv7QiQ2oKVBVLFN-hI-hX_f6QOZeXeqgrDjK9V4uboiKvOVDP-pDzzWKQyh66O.jpg'],
+ 'poi': 'HEHEHGZVWHSVEN',
+ 'price': '-',
+ 'region': '怀柔区',
+ 'shopName': '宋宝贝玩具店',
+ 'star1': '0',
+ 'star2': '0',
+ 'star3': '0',
+ 'star4': '0',
+ 'star5': '2',
+ 'subregion': '',
+ 'tags': ['儿童摄影', '商业街'],
+ 'traffic': ['尚无公交信息'],
+ 'url': 'http://www.dianping.com/shop/26964050'}
+2017-02-23 10:27:19 [root] INFO: Failed(:exception) proxy:http://190.116.175.142:80 for processing http://www.dianping.com/shop/6077562
+2017-02-23 10:27:19 [root] INFO: Request <GET http://www.dianping.com/shop/6077562> using proxy:http://203.145.130.194:80
+2017-02-23 10:27:20 [root] INFO: Failed(:exception) proxy:http://5.189.152.50:3128 for processing http://www.dianping.com/search/category/2/70/g27761r16
+2017-02-23 10:27:20 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r16> using proxy:http://54.255.211.131:8118
+2017-02-23 10:27:21 [root] INFO: Failed(:exception) proxy:http://50.93.200.90:1080 for processing http://www.dianping.com/shop/67694527
+2017-02-23 10:27:21 [root] INFO: Request <GET http://www.dianping.com/shop/67694527> using proxy:http://103.253.146.205:3128
+2017-02-23 10:27:23 [root] INFO: Failed(:exception) proxy:http://50.93.203.13:1080 for processing http://www.dianping.com/shop/58445973
+2017-02-23 10:27:23 [root] INFO: Request <GET http://www.dianping.com/shop/58445973> using proxy:http://124.88.67.14:80
+2017-02-23 10:27:24 [root] INFO: Proxy http://152.92.200.2:80 meet faked 200 OK 
+2017-02-23 10:27:24 [root] INFO: Request <GET http://www.dianping.com/shop/23039523> using proxy:http://58.221.38.170:8080
+2017-02-23 10:27:25 [root] INFO: Good proxy:http://163.121.188.3:8080 for processing <200 http://www.dianping.com/shop/21783117>
+2017-02-23 10:27:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/21783117> (referer: http://www.dianping.com/search/category/2/70/g193r20)
+2017-02-23 10:27:25 [root] INFO: Request <GET http://www.dianping.com/shop/6216780> using proxy:http://50.93.197.100:1080
+2017-02-23 10:27:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/21783117>
+{'addr': ['马家堡东路洋桥12号立业大厦南侧底商(近立业大厦)'],
+ 'branch': '11',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '亲子摄影',
+ 'commentNum': '993',
+ 'hour': ['9:00-17:30'],
+ 'info': 'nosomething',
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '丰台区', '洋桥/木樨园', '亲子摄影', '儿童摄影'],
+ 'nearby_shops': '',
+ 'original_latitude': '39.85182',
+ 'original_longitude': '116.38696',
+ 'overallRate': ['准五星商户'],
+ 'phone': ['4000303096-04038'],
+ 'picurl': ['//p0.meituan.net/wedding/c42ad5750a12e522912b83b5a97f68fa406231.jpg%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HETIUTZVVGGTGR',
+ 'price': '￥3444',
+ 'region': '丰台区',
+ 'shopName': '爱儿美儿童摄影(洋桥店)',
+ 'special': ['无隐形消费'],
+ 'star1': '29',
+ 'star2': '0',
+ 'star3': '15',
+ 'star4': '31',
+ 'star5': '921',
+ 'start': ['2003年'],
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': 'Null',
+ 'url': 'http://www.dianping.com/shop/21783117'}
+2017-02-23 10:27:27 [root] INFO: Failed(:exception) proxy:http://175.103.38.30:8081 for processing http://www.dianping.com/shop/6019244
+2017-02-23 10:27:27 [root] INFO: Request <GET http://www.dianping.com/shop/6019244> using proxy:http://183.95.80.165:8080
+2017-02-23 10:27:29 [root] INFO: Failed(:exception) proxy:http://179.124.136.98:3128 for processing http://www.dianping.com/shop/49316522
+2017-02-23 10:27:29 [root] INFO: Request <GET http://www.dianping.com/shop/49316522> using proxy:http://52.65.154.142:80
+2017-02-23 10:27:29 [root] INFO: Failed(:exception) proxy:http://79.172.0.198:8080 for processing http://www.dianping.com/search/category/2/70/g27761r14
+2017-02-23 10:27:29 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r14> using proxy:http://179.124.136.98:3128
+2017-02-23 10:27:29 [root] INFO: Failed(:exception) proxy:http://203.145.130.194:80 for processing http://www.dianping.com/shop/17944333
+2017-02-23 10:27:29 [root] INFO: Request <GET http://www.dianping.com/shop/17944333> using proxy:http://171.107.32.241:8118
+2017-02-23 10:27:29 [root] INFO: Failed(:exception) proxy:http://221.195.53.117:8998 for processing http://www.dianping.com/shop/4712901
+2017-02-23 10:27:29 [root] INFO: Request <GET http://www.dianping.com/shop/4712901> using proxy:http://151.80.88.44:3128
+2017-02-23 10:27:30 [root] INFO: Failed(:exception) proxy:http://121.14.6.236:80 for processing http://www.dianping.com/shop/19315982
+2017-02-23 10:27:30 [root] INFO: Request <GET http://www.dianping.com/shop/19315982> using proxy:http://120.52.73.98:90
+2017-02-23 10:27:31 [root] INFO: Good proxy:http://124.88.67.24:843 for processing <200 http://www.dianping.com/shop/9068766>
+2017-02-23 10:27:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/9068766> (referer: http://www.dianping.com/search/category/2/70/g193r20)
+2017-02-23 10:27:31 [root] INFO: Request <GET http://www.dianping.com/shop/18597538> using proxy:http://180.254.89.236:80
+2017-02-23 10:27:31 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/9068766>
+{'addr': ['草桥欣园3区恋日嘉园甲2号楼2单元501(近地铁10号线草桥站B口东行100米左右)'],
+ 'branch': '0',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '亲子摄影',
+ 'commentNum': '150',
+ 'hour': ['9:00-18:00 周一至周日'],
+ 'info': 'nosomething',
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '丰台区', '草桥', '亲子摄影', '儿童摄影'],
+ 'nearby_shops': '',
+ 'original_latitude': '39.84557',
+ 'original_longitude': '116.35488',
+ 'overallRate': ['五星商户'],
+ 'phone': ['4001768519'],
+ 'picurl': ['//p1.meituan.net/dpdeal/388d1c2db8cacdc08d9b7bed166be1c01718685.jpg%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HESVSTZVVFHTUI',
+ 'price': '￥766',
+ 'region': '丰台区',
+ 'shopName': 'LILIAN莉莉安·纪实儿童摄影',
+ 'special': ['无隐形消费'],
+ 'star1': '0',
+ 'star2': '0',
+ 'star3': '0',
+ 'star4': '3',
+ 'star5': '151',
+ 'start': ['2008年'],
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': '地铁10号线草桥站B出口50米即到（原童颜美忆）',
+ 'url': 'http://www.dianping.com/shop/9068766'}
+2017-02-23 10:27:31 [root] INFO: Failed(:exception) proxy:http://50.93.204.108:1080 for processing http://www.dianping.com/search/category/2/70/g193r17
+2017-02-23 10:27:31 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r17> using proxy:http://124.88.67.81:80
+2017-02-23 10:27:32 [root] INFO: Failed(:exception) proxy:http://96.239.193.241:8080 for processing http://www.dianping.com/shop/63177206
+2017-02-23 10:27:32 [root] INFO: Request <GET http://www.dianping.com/shop/63177206> using proxy:http://5.2.74.224:1080
+2017-02-23 10:27:32 [root] INFO: Good proxy:http://222.33.192.238:8118 for processing <200 http://www.dianping.com/shop/3009448>
+2017-02-23 10:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/3009448> (referer: http://www.dianping.com/search/category/2/70/g193r5952)
+2017-02-23 10:27:32 [root] INFO: Request <GET http://www.dianping.com/shop/58894999> using proxy:http://124.88.67.54:82
+2017-02-23 10:27:33 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.dianping.com/shop/3009448> (referer: http://www.dianping.com/search/category/2/70/g193r5952)
+Traceback (most recent call last):
+  File "c:\users\edit-000127\appdata\local\programs\python\python35\lib\site-packages\twisted\internet\defer.py", line 651, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\daima\dazhongdianping\dianping-for-github\dianping\spiders\spiders.py", line 678, in parse_baby_shop
+    item = self.parse_shop(response)
+  File "F:\daima\dazhongdianping\dianping-for-github\dianping\spiders\spiders.py", line 645, in parse_shop
+    item = self.navigation_helper(response,item)
+  File "F:\daima\dazhongdianping\dianping-for-github\dianping\spiders\spiders.py", line 718, in navigation_helper
+    if item.get('navigation')[0].strip().startswith('县'):
+TypeError: 'NoneType' object is not subscriptable
+2017-02-23 10:27:33 [root] INFO: Good proxy:http://124.88.67.14:80 for processing <200 http://www.dianping.com/shop/58445973>
+2017-02-23 10:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/58445973> (referer: http://www.dianping.com/search/category/2/70/g193r20)
+2017-02-23 10:27:33 [root] INFO: Request <GET http://www.dianping.com/shop/4548709> using proxy:http://95.165.165.27:8080
+2017-02-23 10:27:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/58445973>
+{'addr': ['东三环南路54号华腾园小区1号楼502室(近劲松地铁)'],
+ 'branch': '0',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '亲子摄影',
+ 'commentNum': '24',
+ 'hour': ['9:00-21:00 周一至周日'],
+ 'info': 'nosomething',
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '朝阳区', '劲松/潘家园', '亲子摄影', '韩式儿童摄影'],
+ 'nearby_shops': '',
+ 'original_latitude': '39.88618',
+ 'original_longitude': '116.46407',
+ 'overallRate': ['四星商户'],
+ 'phone': ['4001769061'],
+ 'picurl': ['//p1.meituan.net/apiback/19c5f88dbce8f9c696f56c5e3946cc261599248.jpg%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HEUJHWZVVJCFBB',
+ 'price': '￥554',
+ 'region': '丰台区',
+ 'shopName': '幸福baby韩式儿童摄影(幸福baby儿童摄影)',
+ 'special': ['底片全送，无隐形消费'],
+ 'star1': '3',
+ 'star2': '1',
+ 'star3': '1',
+ 'star4': '5',
+ 'star5': '14',
+ 'start': ['2012年'],
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': 'Null',
+ 'url': 'http://www.dianping.com/shop/58445973'}
+2017-02-23 10:27:34 [root] INFO: Good proxy:http://58.221.38.170:8080 for processing <200 http://www.dianping.com/shop/23039523>
+2017-02-23 10:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/23039523> (referer: http://www.dianping.com/search/category/2/70/g193r328)
+2017-02-23 10:27:34 [root] INFO: Request <GET http://www.dianping.com/shop/18125588> using proxy:http://50.93.197.98:1080
+2017-02-23 10:27:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/23039523>
+{'addr': ['苹果园南路甲11号(石景山苹果园东口天宇市场茶城四层)'],
+ 'branch': '0',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '亲子摄影',
+ 'commentNum': '13',
+ 'hour': ['09:00—18:00'],
+ 'info': 'nosomething',
+ 'map_type': 'Null',
+ 'navigation': ['北京亲子', '石景山区', '苹果园', '亲子摄影', '韩式儿童摄影'],
+ 'nearby_shops': ['宝宝星婴童游泳馆(苹果园店)', '鱼乐贝贝婴幼儿水育馆(石景...', '印象视觉高端儿童摄影'],
+ 'original_latitude': '39.93077',
+ 'original_longitude': '116.19723',
+ 'overallRate': ['四星商户'],
+ 'phone': ['010--88727899'],
+ 'picurl': ['//p1.meituan.net/apiback/bd1c716cb8f5d9dc9ddf04f71bb965b1798889.jpg%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HEFWVEZVVDSIAN',
+ 'price': '-',
+ 'region': '石景山区',
+ 'shopName': '俏皮宝贝儿童摄影(苹果园店)',
+ 'star1': '0',
+ 'star2': '0',
+ 'star3': '0',
+ 'star4': '0',
+ 'star5': '5',
+ 'subregion': '',
+ 'tags': ['韩式儿童摄影', '苹果园'],
+ 'traffic': ['尚无公交信息'],
+ 'url': 'http://www.dianping.com/shop/23039523'}
+2017-02-23 10:27:34 [root] INFO: Failed(:exception) proxy:http://103.253.146.205:3128 for processing http://www.dianping.com/shop/67694527
+2017-02-23 10:27:34 [root] INFO: Request <GET http://www.dianping.com/shop/67694527> using proxy:http://5.189.152.50:3128
+2017-02-23 10:27:34 [root] INFO: Failed(:exception) proxy:http://183.61.236.55:3128 for processing http://www.dianping.com/shop/67304514
+2017-02-23 10:27:34 [root] INFO: Request <GET http://www.dianping.com/shop/67304514> using proxy:http://196.22.241.52:8080
+2017-02-23 10:27:35 [root] INFO: Good proxy:http://183.95.80.165:8080 for processing <200 http://www.dianping.com/shop/6019244>
+2017-02-23 10:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/6019244> (referer: http://www.dianping.com/search/category/2/70/g193r20)
+2017-02-23 10:27:35 [root] INFO: Request <GET http://www.dianping.com/shop/17674633> using proxy:http://124.88.67.17:843
+2017-02-23 10:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/6019244>
+{'addr': ['东铁营桥金城中心14层(三环路边)'],
+ 'branch': '2',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '亲子摄影',
+ 'commentNum': '343',
+ 'hour': ['9:00-18:00 周一至周日'],
+ 'info': 'nosomething',
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '丰台区', '方庄', '亲子摄影', '儿童摄影'],
+ 'nearby_shops': '',
+ 'original_latitude': '39.85914',
+ 'original_longitude': '116.43165',
+ 'overallRate': ['准五星商户'],
+ 'phone': ['4000303096-04630'],
+ 'picurl': ['//p0.meituan.net/wedding/1732f23ef991a67f02d8120762f41f18290992.jpg%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HEUHHDZVVHSBHP',
+ 'price': '￥3480',
+ 'region': '丰台区',
+ 'shopName': '纸飞机儿童摄影(方庄店)',
+ 'special': ['无隐形消费'],
+ 'star1': '12',
+ 'star2': '1',
+ 'star3': '5',
+ 'star4': '13',
+ 'star5': '312',
+ 'start': ['2009年'],
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': '公交【方庄桥西】站 地铁站【刘家窑】向东1000米',
+ 'url': 'http://www.dianping.com/shop/6019244'}
+2017-02-23 10:27:35 [root] INFO: Failed(:exception) proxy:http://154.16.127.161:1080 for processing http://www.dianping.com/shop/76674164
+2017-02-23 10:27:35 [root] INFO: Request <GET http://www.dianping.com/shop/76674164> using proxy:http://47.90.74.111:8088
+2017-02-23 10:27:37 [root] INFO: Good proxy:http://50.93.197.100:1080 for processing <200 http://www.dianping.com/shop/6216780>
+2017-02-23 10:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/6216780> (referer: http://www.dianping.com/search/category/2/70/g27761r17)
+2017-02-23 10:27:37 [root] INFO: Request <GET http://www.dianping.com/shop/23461624> using proxy:http://61.191.41.130:80
+2017-02-23 10:27:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/6216780>
+{'addr': ['四季青通汇路16号(乐融国际幼儿园)'],
+ 'branch': '1',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '早教中心',
+ 'commentNum': '341',
+ 'info': ['乐融儿童之家是联合国教科文组织倡导的0--6岁婴幼儿一体化教育实践者。课程包括：蒙氏感统、音乐文化、生活艺术、快乐厨房、美德教育、英文课程、数学课程、幼儿园预备班等。'],
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '海淀区', '四季青', '早教中心'],
+ 'nearby_shops': '',
+ 'original_latitude': '39.94091',
+ 'original_longitude': '116.26971',
+ 'overallRate': ['四星商户'],
+ 'phone': ['58720909\xa0\xa058720720'],
+ 'picurl': ['//p1.meituan.net/wedding/2123f1d4b6bbf4203ed110f4bc171e6467046.jpeg%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HEHIEEZVVFSTGT',
+ 'price': '￥17850',
+ 'region': '海淀区',
+ 'shopName': '乐融儿童之家(原枫叶儿童之家)',
+ 'star1': '17',
+ 'star2': '7',
+ 'star3': '11',
+ 'star4': '61',
+ 'star5': '245',
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': 'Null',
+ 'url': 'http://www.dianping.com/shop/6216780'}
+2017-02-23 10:27:39 [root] INFO: Failed(:exception) proxy:http://45.76.128.13:80 for processing http://www.dianping.com/shop/72476071
+2017-02-23 10:27:39 [root] INFO: Request <GET http://www.dianping.com/shop/72476071> using proxy:http://96.239.193.241:8080
+2017-02-23 10:27:39 [root] INFO: Failed(:exception) proxy:http://151.80.88.44:3128 for processing http://www.dianping.com/shop/4712901
+2017-02-23 10:27:39 [root] INFO: Request <GET http://www.dianping.com/shop/4712901> using proxy:http://36.66.113.74:8080
+2017-02-23 10:27:39 [root] INFO: Failed(:exception) proxy:http://91.217.34.137:8080 for processing http://www.dianping.com/shop/50342105
+2017-02-23 10:27:39 [root] INFO: Request <GET http://www.dianping.com/shop/50342105> using proxy:http://115.159.185.186:8088
+2017-02-23 10:27:39 [root] INFO: Proxy http://120.52.73.98:90 meet faked 404 Not Found 
+2017-02-23 10:27:39 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.dianping.com/shop/19315982> (failed 1 times): 404 Not Found
+2017-02-23 10:27:39 [root] INFO: Request <GET http://www.dianping.com/shop/5632807> using proxy:http://124.88.67.34:843
+2017-02-23 10:27:41 [root] INFO: Failed(:exception) proxy:http://203.145.130.194:80 for processing http://www.dianping.com/shop/6077562
+2017-02-23 10:27:41 [root] INFO: Request <GET http://www.dianping.com/shop/6077562> using proxy:http://221.226.82.130:8998
+2017-02-23 10:27:41 [root] INFO: Failed(:exception) proxy:http://54.255.211.131:8118 for processing http://www.dianping.com/search/category/2/70/g27761r16
+2017-02-23 10:27:41 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r16> using proxy:http://125.166.225.18:80
+2017-02-23 10:27:42 [root] INFO: Failed(:exception) proxy:http://179.124.136.98:3128 for processing http://www.dianping.com/search/category/2/70/g27761r14
+2017-02-23 10:27:42 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r14> using proxy:http://54.255.211.131:8118
+2017-02-23 10:27:42 [root] INFO: Good proxy:http://124.88.67.54:82 for processing <200 http://www.dianping.com/shop/58894999>
+2017-02-23 10:27:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/58894999> (referer: http://www.dianping.com/search/category/2/70/g27761r17)
+2017-02-23 10:27:42 [root] INFO: Request <GET http://www.dianping.com/shop/63058310> using proxy:http://5.2.74.91:1080
+2017-02-23 10:27:42 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/58894999>
+{'addr': ['玉泉路景藏大厦西侧院内(Carlly咖啡厅)'],
+ 'branch': '0',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '早教中心',
+ 'commentNum': '69',
+ 'info': ['33度婴儿游泳九级标准是33度婴幼儿游泳拓展训练馆研发团队制定的婴幼儿游泳训练标准。此标准针对0-6岁婴幼儿，在遵循儿童身体和心理发展的基础上，融入了早教、多种游戏的快乐训练法。'],
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '海淀区', '五棵松', '早教中心', '亲子游泳'],
+ 'nearby_shops': '',
+ 'original_latitude': '39.9082',
+ 'original_longitude': '116.25785',
+ 'overallRate': ['准五星商户'],
+ 'phone': ['4001764491'],
+ 'picurl': ['//p0.meituan.net/wedding/cbfbb2d69efe39b36d132b525aa1a2a51556175.jpg%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HEIAGUZVVERFUX',
+ 'price': '￥106',
+ 'region': '海淀区',
+ 'shopName': '33度婴幼儿游泳拓展训练馆',
+ 'star1': '8',
+ 'star2': '0',
+ 'star3': '0',
+ 'star4': '4',
+ 'star5': '59',
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': 'Null',
+ 'url': 'http://www.dianping.com/shop/58894999'}
+2017-02-23 10:27:44 [root] INFO: Failed(:exception) proxy:http://52.65.154.142:80 for processing http://www.dianping.com/shop/49316522
+2017-02-23 10:27:44 [root] INFO: Request <GET http://www.dianping.com/shop/49316522> using proxy:http://124.88.67.20:843
+2017-02-23 10:27:45 [root] INFO: Failed(:exception) proxy:http://171.107.32.241:8118 for processing http://www.dianping.com/shop/17944333
+2017-02-23 10:27:45 [root] INFO: Request <GET http://www.dianping.com/shop/17944333> using proxy:http://47.90.74.111:8088
+2017-02-23 10:27:46 [root] INFO: Failed(:exception) proxy:http://180.254.89.236:80 for processing http://www.dianping.com/shop/18597538
+2017-02-23 10:27:46 [root] INFO: Request <GET http://www.dianping.com/shop/18597538> using proxy:http://120.27.113.72:8888
+2017-02-23 10:27:46 [root] INFO: Failed(:exception) proxy:http://5.2.74.224:1080 for processing http://www.dianping.com/shop/63177206
+2017-02-23 10:27:46 [root] INFO: Request <GET http://www.dianping.com/shop/63177206> using proxy:http://163.121.188.3:8080
+2017-02-23 10:27:46 [root] INFO: Good proxy:http://124.88.67.17:843 for processing <200 http://www.dianping.com/shop/17674633>
+2017-02-23 10:27:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/17674633> (referer: http://www.dianping.com/search/category/2/70/g27761r17)
+2017-02-23 10:27:46 [root] INFO: Request <GET http://www.dianping.com/shop/6228485> using proxy:http://125.166.224.142:80
+2017-02-23 10:27:46 [root] INFO: Failed(:exception) proxy:http://5.189.152.50:3128 for processing http://www.dianping.com/shop/67694527
+2017-02-23 10:27:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/17674633>
+{'addr': ['常润路34号(近西郊机场东侧)'],
+ 'branch': '2',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '早教中心',
+ 'commentNum': '642',
+ 'info': ['乐游宝宝是世界婴幼儿游泳协会成员单位，为0~6岁的宝宝，提供源于美国的国际化亲子游泳早教课程。乐游宝宝建造了国内第一个专为婴幼儿设计的亲子游泳池，也是唯一被全国性媒体CCTV专题报道的亲子游泳机构。'],
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '海淀区', '远大路', '早教中心', '亲子游泳'],
+ 'nearby_shops': '',
+ 'original_latitude': '39.95174',
+ 'original_longitude': '116.26632',
+ 'overallRate': ['准五星商户'],
+ 'phone': ['4000303096-04136'],
+ 'picurl': ['//p1.meituan.net/wedding/a8bee3eba8089078e4fe665235f1b62f334268.jpg%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HEHCSRZVVFVRVX',
+ 'price': '￥7683',
+ 'region': '海淀区',
+ 'shopName': '乐游宝宝亲子游泳(四季青中心)',
+ 'star1': '3',
+ 'star2': '3',
+ 'star3': '12',
+ 'star4': '51',
+ 'star5': '573',
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': 'Null',
+ 'url': 'http://www.dianping.com/shop/17674633'}
+2017-02-23 10:27:46 [root] INFO: Request <GET http://www.dianping.com/shop/67694527> using proxy:http://47.90.74.111:8088
+2017-02-23 10:27:47 [root] INFO: Good proxy:http://50.93.197.98:1080 for processing <200 http://www.dianping.com/shop/18125588>
+2017-02-23 10:27:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/18125588> (referer: http://www.dianping.com/search/category/2/70/g27761r17)
+2017-02-23 10:27:47 [root] INFO: Request <GET http://www.dianping.com/shop/18204015> using proxy:http://36.80.235.14:80
+2017-02-23 10:27:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/18125588>
+{'addr': ['万柳中路迪佳广场B503(巴沟地铁站)'],
+ 'branch': '2',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '早教中心',
+ 'commentNum': '393',
+ 'info': ['蓝旗亲子游泳是国内首家3D空间设计游泳馆，也是全国唯一一家拥有政府部门官方认证水质报告的机构，拥有权威澳洲课程体系、国际认证的专业婴幼儿游泳教练员，蓝旗亲子游泳，送给0-5岁孩子珍藏一生的财富！'],
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '海淀区', '万柳', '早教中心', '亲子游泳'],
+ 'nearby_shops': '',
+ 'original_latitude': '39.96865',
+ 'original_longitude': '116.29734',
+ 'overallRate': ['四星商户'],
+ 'phone': ['4001768113'],
+ 'picurl': ['//p1.meituan.net/wedding/b77fc37ae7c6b627b357a95074e141be2090718.jpg%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HEHIDHZVVHBGHR',
+ 'price': '￥244',
+ 'region': '海淀区',
+ 'shopName': 'Starfish蓝旗亲子游泳(万柳中心店)',
+ 'star1': '8',
+ 'star2': '8',
+ 'star3': '23',
+ 'star4': '48',
+ 'star5': '308',
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': '394路; 534路; 539路; 611路; 664路; 699路; 992路; 运通114线',
+ 'url': 'http://www.dianping.com/shop/18125588'}
+2017-02-23 10:27:47 [root] INFO: Good proxy:http://61.191.41.130:80 for processing <200 http://www.dianping.com/shop/23461624>
+2017-02-23 10:27:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/23461624> (referer: http://www.dianping.com/search/category/2/70/g27761r17)
+2017-02-23 10:27:47 [root] INFO: Request <GET http://www.dianping.com/shop/19169627> using proxy:http://178.73.195.162:80
+2017-02-23 10:27:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/23461624>
+{'addr': ['G6京藏高速回龙观北出口铺路向北1公里(如家酒店院内)'],
+ 'branch': '0',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '早教中心',
+ 'commentNum': '306',
+ 'info': ['DAMMY&I（黛米与我），意为Daddy，Mommy and '
+          'I，即爸爸、妈妈和我。三个卡通人物：黄色呆呆、蓝色米米、紫色爱宝。黛米与我最先提出将欧美先进教学与中国亲子理念相结合，培养水性，感受温情'],
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '昌平区', '清河', '婴儿游泳'],
+ 'nearby_shops': '',
+ 'original_latitude': '40.08064',
+ 'original_longitude': '116.31032',
+ 'overallRate': ['准五星商户'],
+ 'phone': ['4001105629'],
+ 'picurl': ['//p1.meituan.net/apiback/06804d2bdcdd88ec55f60e2183ba0950998523.jpg%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HEFBHWZVVRCDIG',
+ 'price': '￥168',
+ 'region': '海淀区',
+ 'shopName': '',
+ 'star1': '6',
+ 'star2': '2',
+ 'star3': '6',
+ 'star4': '53',
+ 'star5': '239',
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': 'Null',
+ 'url': 'http://www.dianping.com/shop/23461624'}
+2017-02-23 10:27:48 [root] INFO: Good proxy:http://124.88.67.34:843 for processing <200 http://www.dianping.com/shop/5632807>
+2017-02-23 10:27:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/5632807> (referer: http://www.dianping.com/search/category/2/70/g27761r17)
+2017-02-23 10:27:48 [root] INFO: Request <GET http://www.dianping.com/shop/22153468> using proxy:http://52.65.154.142:80
+2017-02-23 10:27:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/5632807>
+{'addr': ['北三环西路甲18号大钟寺中坤广场C座3-4楼(近城铁13号线大钟寺站)'],
+ 'branch': '2',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '早教中心',
+ 'commentNum': '107',
+ 'info': ['积木宝贝是一家针对0-6岁宝宝的国际早教机构，为宝宝提供全面发展的理想通道，科学呵护宝宝健康成长。依据中科院独创“体能、智能、心理能力”三维平衡发展理论。'],
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '海淀区', '双榆树', '早教中心'],
+ 'nearby_shops': '',
+ 'original_latitude': '39.96579',
+ 'original_longitude': '116.34153',
+ 'overallRate': ['四星商户'],
+ 'phone': ['4000303096-05843'],
+ 'picurl': ['//p0.meituan.net/wedding/fd30e5e8684620de8600ea3cde0de928251771.jpg%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HEIRJVZVVIBITX',
+ 'price': '￥12950',
+ 'region': '海淀区',
+ 'shopName': '积木宝贝国际早教中心(大钟寺店)',
+ 'star1': '12',
+ 'star2': '2',
+ 'star3': '10',
+ 'star4': '20',
+ 'star5': '63',
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': '城铁13号线大钟寺站',
+ 'url': 'http://www.dianping.com/shop/5632807'}
+2017-02-23 10:27:48 [root] INFO: Failed(:exception) proxy:http://96.239.193.241:8080 for processing http://www.dianping.com/shop/72476071
+2017-02-23 10:27:48 [root] INFO: Request <GET http://www.dianping.com/shop/72476071> using proxy:http://180.254.89.236:80
+2017-02-23 10:27:49 [root] INFO: Failed(:exception) proxy:http://124.88.67.81:80 for processing http://www.dianping.com/search/category/2/70/g193r17
+2017-02-23 10:27:49 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g193r17> using proxy:http://125.88.74.122:83
+2017-02-23 10:27:49 [root] INFO: Good proxy:http://221.226.82.130:8998 for processing <200 http://www.dianping.com/shop/6077562>
+2017-02-23 10:27:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/6077562> (referer: http://www.dianping.com/search/category/2/70/g27761r20)
+2017-02-23 10:27:49 [root] INFO: Request <GET http://www.dianping.com/shop/79223807> using proxy:http://154.16.127.161:1080
+2017-02-23 10:27:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/6077562>
+{'addr': ['5号线地铁蒲黄榆站B口出楼上物美大卖场4层50号爱育幼童(地铁5号线蒲黄榆站B...'],
+ 'branch': '1',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '早教中心',
+ 'commentNum': '35',
+ 'info': ['爱育幼童儿童潜能培训学校，全球连锁,国际品牌，全国有近500多家机构，提供胎教、早教、幼教系统的脑潜能理论课程，专注力课程，潜智数学课程，思维导图阅读课程，图像识字课程，高频英语课程、超快速记忆课程。'],
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '丰台区', '方庄', '早教中心', '大脑开发'],
+ 'nearby_shops': '',
+ 'original_latitude': '39.86563',
+ 'original_longitude': '116.41839',
+ 'overallRate': ['四星商户'],
+ 'phone': ['4000303096-03852'],
+ 'picurl': ['//qcloud.dpfile.com/pc/5-mPi1NQyvjkVGO8ApcIKFlW93BTDZgZ2UXyf-CD8JGyir_7FSc89NCVg4kymxbF.jpg'],
+ 'poi': 'HETWSWZVVHIHCS',
+ 'price': '-',
+ 'region': '丰台区',
+ 'shopName': '爱育幼童全脑潜能开发中心(方庄分部)',
+ 'star1': '2',
+ 'star2': '1',
+ 'star3': '2',
+ 'star4': '3',
+ 'star5': '27',
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': '51、599、685、654、53、25、122、特3',
+ 'url': 'http://www.dianping.com/shop/6077562'}
+2017-02-23 10:27:51 [root] INFO: Failed(:exception) proxy:http://5.2.74.91:1080 for processing http://www.dianping.com/shop/63058310
+2017-02-23 10:27:51 [root] INFO: Request <GET http://www.dianping.com/shop/63058310> using proxy:http://124.88.67.24:843
+2017-02-23 10:27:51 [root] INFO: Failed(:exception) proxy:http://95.165.165.27:8080 for processing http://www.dianping.com/shop/4548709
+2017-02-23 10:27:51 [root] INFO: Request <GET http://www.dianping.com/shop/4548709> using proxy:http://70.55.222.104:80
+2017-02-23 10:27:54 [root] INFO: Failed(:exception) proxy:http://196.22.241.52:8080 for processing http://www.dianping.com/shop/67304514
+2017-02-23 10:27:54 [root] INFO: Request <GET http://www.dianping.com/shop/67304514> using proxy:http://190.116.175.142:80
+2017-02-23 10:27:56 [root] INFO: Failed(:exception) proxy:http://47.90.74.111:8088 for processing http://www.dianping.com/shop/76674164
+2017-02-23 10:27:56 [root] INFO: Request <GET http://www.dianping.com/shop/76674164> using proxy:http://5.189.152.50:3128
+2017-02-23 10:27:56 [root] INFO: Failed(:exception) proxy:http://36.66.113.74:8080 for processing http://www.dianping.com/shop/4712901
+2017-02-23 10:27:56 [root] INFO: Request <GET http://www.dianping.com/shop/4712901> using proxy:http://202.73.51.102:80
+2017-02-23 10:27:57 [root] INFO: Failed(:exception) proxy:http://115.159.185.186:8088 for processing http://www.dianping.com/shop/50342105
+2017-02-23 10:27:57 [root] INFO: Request <GET http://www.dianping.com/shop/50342105> using proxy:http://58.221.38.170:8080
+2017-02-23 10:27:58 [root] INFO: Failed(:exception) proxy:http://125.166.225.18:80 for processing http://www.dianping.com/search/category/2/70/g27761r16
+2017-02-23 10:27:58 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r16> using proxy:http://91.217.34.137:8080
+2017-02-23 10:27:59 [root] INFO: Failed(:exception) proxy:http://54.255.211.131:8118 for processing http://www.dianping.com/search/category/2/70/g27761r14
+2017-02-23 10:27:59 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r14> using proxy:http://125.88.74.122:83
+2017-02-23 10:28:01 [root] INFO: Failed(:exception) proxy:http://124.88.67.20:843 for processing http://www.dianping.com/shop/49316522
+2017-02-23 10:28:01 [root] INFO: Request <GET http://www.dianping.com/shop/49316522> using proxy:http://196.22.241.52:8080
+2017-02-23 10:28:01 [root] INFO: Failed(:exception) proxy:http://47.90.74.111:8088 for processing http://www.dianping.com/shop/17944333
+2017-02-23 10:28:02 [root] INFO: Request <GET http://www.dianping.com/shop/17944333> using proxy:http://124.88.67.81:81
+2017-02-23 10:28:02 [root] INFO: Good proxy:http://163.121.188.3:8080 for processing <200 http://www.dianping.com/shop/63177206>
+2017-02-23 10:28:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/63177206> (referer: http://www.dianping.com/search/category/2/70/g193r20)
+2017-02-23 10:28:02 [root] INFO: Request <GET http://www.dianping.com/shop/32422997> using proxy:http://50.93.197.98:1080
+2017-02-23 10:28:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/63177206>
+{'addr': ['鑫福里16号楼4单元302(地铁角门东东行200米路北)'],
+ 'branch': '0',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '亲子摄影',
+ 'commentNum': '42',
+ 'hour': ['8:00------21:00'],
+ 'info': 'nosomething',
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '丰台区', '国贸', '亲子摄影', '儿童摄影'],
+ 'nearby_shops': '',
+ 'original_latitude': '39.84586',
+ 'original_longitude': '116.39255',
+ 'overallRate': ['四星商户'],
+ 'phone': ['010-57132433'],
+ 'picurl': ['//qcloud.dpfile.com/pc/VFlqSF139Ycihfic7DEtb5ciYGzPzFsjZiC4oRg9o77FZDTpY1jTPBtBiShMGWuC.jpg'],
+ 'poi': 'HETUFAZVVGGRBC',
+ 'price': '￥656',
+ 'region': '丰台区',
+ 'shopName': '云朵上门拍儿童摄影',
+ 'special': ['底片全送，无隐形消费'],
+ 'star1': '3',
+ 'star2': '1',
+ 'star3': '1',
+ 'star4': '2',
+ 'star5': '35',
+ 'start': ['2013年'],
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': '5号线刘家窑B口出、公交刘家窑桥东站、刘家窑桥站下车',
+ 'url': 'http://www.dianping.com/shop/63177206'}
+2017-02-23 10:28:03 [root] INFO: Failed(:exception) proxy:http://180.254.89.236:80 for processing http://www.dianping.com/shop/72476071
+2017-02-23 10:28:03 [root] INFO: Request <GET http://www.dianping.com/shop/72476071> using proxy:http://106.185.39.152:8080
+2017-02-23 10:28:03 [root] INFO: Good proxy:http://125.88.74.122:83 for processing <200 http://www.dianping.com/search/category/2/70/g193r17>
+2017-02-23 10:28:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/search/category/2/70/g193r17> (referer: None)
+2017-02-23 10:28:03 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r17p9?aid=f180626256063317e2d30bfc0f76477fe0b8cc988bb471c764aef468895e813db53659b74d3478b17f97774d4b0d0e4fa3f53a154a8fc5b3f02a71e87ebc29c3863783d9eb2ee46d3a44b35fc7ac6f95> using proxy:http://50.93.197.99:1080
+2017-02-23 10:28:04 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/shop/21177132>
+2017-02-23 10:28:04 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/shop/14736964>
+2017-02-23 10:28:04 [root] INFO: Failed(:exception) proxy:http://120.27.113.72:8888 for processing http://www.dianping.com/shop/18597538
+2017-02-23 10:28:04 [root] INFO: Request <GET http://www.dianping.com/shop/18597538> using proxy:http://218.17.43.228:3128
+2017-02-23 10:28:05 [root] INFO: Good proxy:http://124.88.67.24:843 for processing <200 http://www.dianping.com/shop/63058310>
+2017-02-23 10:28:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/63058310> (referer: http://www.dianping.com/search/category/2/70/g27761r17)
+2017-02-23 10:28:05 [root] INFO: Request <GET http://www.dianping.com/shop/3657541> using proxy:http://70.55.222.104:80
+2017-02-23 10:28:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/63058310>
+{'addr': ['清河中街68号华润五彩城购物中心东区三层L373号'],
+ 'branch': '0',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '早教中心',
+ 'commentNum': '79',
+ 'info': ['美吉姆全面引进了拥有近30年历史、美国专业的音乐早教课程-Music '
+          'Together和全美极具综合性的儿童艺术教育课程Abrakadoodle，成为全球唯一同时开设这三大优秀早期教育课程的早教机构。'],
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '海淀区', '上地', '早教中心', '艺术启蒙'],
+ 'nearby_shops': '',
+ 'original_latitude': '40.0304',
+ 'original_longitude': '116.33596',
+ 'overallRate': ['四星商户'],
+ 'phone': ['4000303096-06785'],
+ 'picurl': ['//p0.meituan.net/ugcpic/63dbca26eec7363acc120d65d1c8736a%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HEGWCAZVVJIJTD',
+ 'price': '￥15524',
+ 'region': '海淀区',
+ 'shopName': '美吉姆北京五彩城中心',
+ 'star1': '6',
+ 'star2': '3',
+ 'star3': '1',
+ 'star4': '5',
+ 'star5': '64',
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': 'Null',
+ 'url': 'http://www.dianping.com/shop/63058310'}
+2017-02-23 10:28:06 [root] INFO: Failed(:exception) proxy:http://125.166.224.142:80 for processing http://www.dianping.com/shop/6228485
+2017-02-23 10:28:06 [root] INFO: Request <GET http://www.dianping.com/shop/6228485> using proxy:http://40.68.88.27:8080
+2017-02-23 10:28:07 [root] INFO: Failed(:exception) proxy:http://47.90.74.111:8088 for processing http://www.dianping.com/shop/67694527
+2017-02-23 10:28:07 [root] INFO: Request <GET http://www.dianping.com/shop/67694527> using proxy:http://5.2.74.224:1080
+2017-02-23 10:28:08 [root] INFO: Failed(:exception) proxy:http://36.80.235.14:80 for processing http://www.dianping.com/shop/18204015
+2017-02-23 10:28:08 [root] INFO: Request <GET http://www.dianping.com/shop/18204015> using proxy:http://50.93.197.100:1080
+2017-02-23 10:28:09 [root] INFO: Good proxy:http://58.221.38.170:8080 for processing <200 http://www.dianping.com/shop/50342105>
+2017-02-23 10:28:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/50342105> (referer: http://www.dianping.com/search/category/2/70/g27761r15)
+2017-02-23 10:28:09 [root] INFO: Request <GET http://www.dianping.com/shop/14179728> using proxy:http://124.88.67.17:82
+2017-02-23 10:28:09 [root] INFO: Failed(:exception) proxy:http://5.189.152.50:3128 for processing http://www.dianping.com/shop/76674164
+2017-02-23 10:28:09 [root] INFO: Request <GET http://www.dianping.com/shop/76674164> using proxy:http://124.88.67.14:80
+2017-02-23 10:28:09 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/50342105>
+{'addr': ['丰台方庄蒲黄榆蒲方路芳古园一区8号楼物美大卖场4层璞英学堂培训中心'],
+ 'branch': '0',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '早教中心',
+ 'commentNum': '1',
+ 'hour': ['周一~周日: 00:00-23:00'],
+ 'info': 'nosomething',
+ 'map_type': 'Null',
+ 'navigation': ['北京亲子', '丰台区', '崇文门', '早教中心', '艺术启蒙'],
+ 'nearby_shops': ['励步国际儿童教育(方庄店)', '瑞思学科英语(方庄校区)', '格林童趣专业儿童摄影(方庄...'],
+ 'original_latitude': '39.86625',
+ 'original_longitude': '116.42311',
+ 'overallRate': ['三星商户'],
+ 'phone': ['010--59799963'],
+ 'picurl': ['//qcloud.dpfile.com/pc/dPsjmzZjONrcWtggluEnII3neCx6nVn9WGFoNDhSvVjFZDTpY1jTPBtBiShMGWuC.jpg'],
+ 'poi': 'HEUBEUZVVHRIIG',
+ 'price': '-',
+ 'region': '东城区',
+ 'shopName': '德曼艺术培训中心',
+ 'star1': '1',
+ 'star2': '0',
+ 'star3': '0',
+ 'star4': '0',
+ 'star5': '0',
+ 'subregion': '',
+ 'tags': ['艺术启蒙', '崇文门'],
+ 'traffic': ['尚无公交信息'],
+ 'url': 'http://www.dianping.com/shop/50342105'}
+2017-02-23 10:28:09 [root] INFO: Failed(:exception) proxy:http://178.73.195.162:80 for processing http://www.dianping.com/shop/19169627
+2017-02-23 10:28:09 [root] INFO: Request <GET http://www.dianping.com/shop/19169627> using proxy:http://50.93.197.100:1080
+2017-02-23 10:28:10 [root] INFO: Good proxy:http://125.88.74.122:83 for processing <200 http://www.dianping.com/search/category/2/70/g27761r14>
+2017-02-23 10:28:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/search/category/2/70/g27761r14> (referer: None)
+2017-02-23 10:28:10 [root] INFO: Request <GET http://www.dianping.com/shop/22073363> using proxy:http://107.174.68.214:1080
+2017-02-23 10:28:11 [root] INFO: Failed(:exception) proxy:http://52.65.154.142:80 for processing http://www.dianping.com/shop/22153468
+2017-02-23 10:28:11 [root] INFO: Request <GET http://www.dianping.com/shop/22153468> using proxy:http://107.155.113.159:1080
+2017-02-23 10:28:12 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 21 pages/min), scraped 27 items (at 17 items/min)
+2017-02-23 10:28:13 [root] INFO: Failed(:exception) proxy:http://154.16.127.161:1080 for processing http://www.dianping.com/shop/79223807
+2017-02-23 10:28:13 [root] INFO: Request <GET http://www.dianping.com/shop/79223807> using proxy:http://120.52.73.97:8088
+2017-02-23 10:28:14 [root] INFO: Failed(:exception) proxy:http://70.55.222.104:80 for processing http://www.dianping.com/shop/4548709
+2017-02-23 10:28:14 [root] INFO: Request <GET http://www.dianping.com/shop/4548709> using proxy:http://124.88.67.17:843
+2017-02-23 10:28:15 [root] INFO: Failed(:exception) proxy:http://190.116.175.142:80 for processing http://www.dianping.com/shop/67304514
+2017-02-23 10:28:15 [root] INFO: Request <GET http://www.dianping.com/shop/67304514> using proxy:http://106.185.39.152:8080
+2017-02-23 10:28:15 [root] INFO: Good proxy:http://50.93.197.98:1080 for processing <200 http://www.dianping.com/shop/32422997>
+2017-02-23 10:28:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/32422997> (referer: http://www.dianping.com/search/category/2/70/g27761r17)
+2017-02-23 10:28:15 [root] INFO: Request <GET http://www.dianping.com/shop/32475301> using proxy:http://125.162.208.252:80
+2017-02-23 10:28:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/32422997>
+{'addr': ['复兴路69号卓展购物中心三层南区'],
+ 'branch': '3',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '早教中心',
+ 'commentNum': '68',
+ 'info': ['Waterbabies水孩子，中国水育早教领导品牌。最适合中国宝宝的水育课程，同时强健宝宝的体能、智能以及心理能力，使其全面均衡成长，激发宝宝的无限潜能！让宝宝的未来，活力泳无止境！'],
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '海淀区', '五棵松', '早教中心'],
+ 'nearby_shops': '',
+ 'original_latitude': '39.91367',
+ 'original_longitude': '116.27984',
+ 'overallRate': ['四星商户'],
+ 'phone': ['4001769065'],
+ 'picurl': ['//qcloud.dpfile.com/pc/ZJb2cgBWS-bDbHXaTu9XkAleUsjyOv8mLdXH-2V_5Ctaku7YVgiLZpTnfzxn5yfs.jpg'],
+ 'poi': 'HEIGUUZVVFFBHT',
+ 'price': '-',
+ 'region': '海淀区',
+ 'shopName': '水孩子水育早教(卓展店)',
+ 'star1': '4',
+ 'star2': '1',
+ 'star3': '1',
+ 'star4': '7',
+ 'star5': '55',
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': '地铁1号线B口，途经公交：436路;568路;952路;967路;982路;983路',
+ 'url': 'http://www.dianping.com/shop/32422997'}
+2017-02-23 10:28:15 [root] INFO: Failed(:exception) proxy:http://106.185.39.152:8080 for processing http://www.dianping.com/shop/72476071
+2017-02-23 10:28:15 [root] INFO: Request <GET http://www.dianping.com/shop/72476071> using proxy:http://124.88.67.17:82
+2017-02-23 10:28:16 [root] INFO: Failed(:exception) proxy:http://40.68.88.27:8080 for processing http://www.dianping.com/shop/6228485
+2017-02-23 10:28:16 [root] INFO: Request <GET http://www.dianping.com/shop/6228485> using proxy:http://221.195.53.117:8998
+2017-02-23 10:28:16 [root] INFO: Good proxy:http://50.93.197.99:1080 for processing <200 http://www.dianping.com/search/category/2/70/g27761r17p9?aid=f180626256063317e2d30bfc0f76477fe0b8cc988bb471c764aef468895e813db53659b74d3478b17f97774d4b0d0e4fa3f53a154a8fc5b3f02a71e87ebc29c3863783d9eb2ee46d3a44b35fc7ac6f95>
+2017-02-23 10:28:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/search/category/2/70/g27761r17p9?aid=f180626256063317e2d30bfc0f76477fe0b8cc988bb471c764aef468895e813db53659b74d3478b17f97774d4b0d0e4fa3f53a154a8fc5b3f02a71e87ebc29c3863783d9eb2ee46d3a44b35fc7ac6f95> (referer: http://www.dianping.com/search/category/2/70/g27761r17)
+2017-02-23 10:28:16 [root] INFO: Request <GET http://www.dianping.com/shop/67509711> using proxy:http://52.65.154.142:80
+2017-02-23 10:28:16 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/search/category/2/70/g27761r17p8?aid=f180626256063317e2d30bfc0f76477fe0b8cc988bb471c764aef468895e813db53659b74d3478b17f97774d4b0d0e4fa3f53a154a8fc5b3f02a71e87ebc29c3863783d9eb2ee46d3a44b35fc7ac6f95>
+2017-02-23 10:28:16 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/search/category/2/70/g27761r17p5?aid=f180626256063317e2d30bfc0f76477fe0b8cc988bb471c764aef468895e813db53659b74d3478b17f97774d4b0d0e4fa3f53a154a8fc5b3f02a71e87ebc29c3863783d9eb2ee46d3a44b35fc7ac6f95>
+2017-02-23 10:28:16 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/search/category/2/70/g27761r17p6?aid=f180626256063317e2d30bfc0f76477fe0b8cc988bb471c764aef468895e813db53659b74d3478b17f97774d4b0d0e4fa3f53a154a8fc5b3f02a71e87ebc29c3863783d9eb2ee46d3a44b35fc7ac6f95>
+2017-02-23 10:28:16 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/search/category/2/70/g27761r17p7?aid=f180626256063317e2d30bfc0f76477fe0b8cc988bb471c764aef468895e813db53659b74d3478b17f97774d4b0d0e4fa3f53a154a8fc5b3f02a71e87ebc29c3863783d9eb2ee46d3a44b35fc7ac6f95>
+2017-02-23 10:28:17 [root] INFO: Failed(:exception) proxy:http://202.73.51.102:80 for processing http://www.dianping.com/shop/4712901
+2017-02-23 10:28:17 [root] INFO: Request <GET http://www.dianping.com/shop/4712901> using proxy:http://50.93.197.100:1080
+2017-02-23 10:28:17 [root] INFO: Failed(:exception) proxy:http://5.2.74.224:1080 for processing http://www.dianping.com/shop/67694527
+2017-02-23 10:28:17 [root] INFO: Request <GET http://www.dianping.com/shop/67694527> using proxy:http://124.88.67.10:83
+2017-02-23 10:28:18 [root] INFO: Good proxy:http://124.88.67.17:82 for processing <200 http://www.dianping.com/shop/14179728>
+2017-02-23 10:28:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/14179728> (referer: http://www.dianping.com/search/category/2/70/g193r17)
+2017-02-23 10:28:18 [root] INFO: Request <GET http://www.dianping.com/shop/79548617> using proxy:http://47.90.74.111:8088
+2017-02-23 10:28:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/14179728>
+{'addr': ['西四环北路137号院北1号爱儿美摄影创意园B座(五路桥公交站西行400米，地铁6...'],
+ 'branch': '11',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '亲子摄影',
+ 'commentNum': '150',
+ 'hour': ['9:00-17:30 周一至周日'],
+ 'info': 'nosomething',
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '海淀区', '四季青', '亲子摄影', '儿童摄影'],
+ 'nearby_shops': '',
+ 'original_latitude': '39.9332',
+ 'original_longitude': '116.27071',
+ 'overallRate': ['准五星商户'],
+ 'phone': ['4000303096-04037'],
+ 'picurl': ['//p0.meituan.net/wedding/b27e9c74b936a9a7e15ad4b56ce9ec3c442800.jpg%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HEHSRCZVVFJCHK',
+ 'price': '￥2154',
+ 'region': '海淀区',
+ 'shopName': '爱儿美儿童摄影VVIP明星馆',
+ 'star1': '1',
+ 'star2': '0',
+ 'star3': '0',
+ 'star4': '2',
+ 'star5': '147',
+ 'start': ['2003年'],
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': '公交61.121.334.355.489.505.507.588.603.698.913.952.981.983.运通110.114.115.118至五路桥站地铁6号线海淀五路居站西行380米至河边右转200米',
+ 'url': 'http://www.dianping.com/shop/14179728'}
+2017-02-23 10:28:18 [root] INFO: Good proxy:http://124.88.67.14:80 for processing <200 http://www.dianping.com/shop/76674164>
+2017-02-23 10:28:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/76674164> (referer: http://www.dianping.com/search/category/2/70/g193r20)
+2017-02-23 10:28:18 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r17p1> using proxy:http://124.88.67.10:83
+2017-02-23 10:28:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/76674164>
+{'addr': ['南苑西路39号楼槐房万达广场2层-12号'],
+ 'branch': '0',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '亲子摄影',
+ 'commentNum': '23',
+ 'hour': ['10:00-22:00 周一至周日'],
+ 'info': 'nosomething',
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '丰台区', '公益西桥', '亲子摄影', '儿童摄影'],
+ 'nearby_shops': '',
+ 'original_latitude': '39.81329',
+ 'original_longitude': '116.36784',
+ 'overallRate': ['四星商户'],
+ 'phone': ['4000303096-06410'],
+ 'picurl': ['//p1.meituan.net/wedding/c219e61bf11a5e08d9fd6d8c7a16bf441447120.jpg%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HEUAGHZVVFAEBH',
+ 'price': '-',
+ 'region': '丰台区',
+ 'shopName': 'FACE MEMO德国儿童摄影(丰台槐房万达店)',
+ 'special': ['无隐形消费，专业化妆'],
+ 'star1': '0',
+ 'star2': '0',
+ 'star3': '0',
+ 'star4': '0',
+ 'star5': '24',
+ 'start': ['2013年'],
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': 'Null',
+ 'url': 'http://www.dianping.com/shop/76674164'}
+2017-02-23 10:28:19 [root] INFO: Failed(:exception) proxy:http://91.217.34.137:8080 for processing http://www.dianping.com/search/category/2/70/g27761r16
+2017-02-23 10:28:19 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r16> using proxy:http://50.93.203.13:1080
+2017-02-23 10:28:19 [root] INFO: Failed(:exception) proxy:http://196.22.241.52:8080 for processing http://www.dianping.com/shop/49316522
+2017-02-23 10:28:19 [root] INFO: Request <GET http://www.dianping.com/shop/49316522> using proxy:http://163.121.188.3:8080
+2017-02-23 10:28:19 [root] INFO: Proxy http://120.52.73.97:8088 meet faked 404 Not Found 
+2017-02-23 10:28:19 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.dianping.com/shop/79223807> (failed 1 times): 404 Not Found
+2017-02-23 10:28:19 [root] INFO: Request <GET http://www.dianping.com/shop/22180021> using proxy:http://122.212.129.9:80
+2017-02-23 10:28:19 [root] INFO: Good proxy:http://50.93.197.100:1080 for processing <200 http://www.dianping.com/shop/18204015>
+2017-02-23 10:28:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/18204015> (referer: http://www.dianping.com/search/category/2/70/g27761r17)
+2017-02-23 10:28:19 [root] INFO: Request <GET http://www.dianping.com/shop/65959310> using proxy:http://40.68.88.27:8080
+2017-02-23 10:28:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/18204015>
+{'addr': ['田村路43号京粮广场A座三层102(玉泉路和田村路交叉口)'],
+ 'branch': '0',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '早教中心',
+ 'commentNum': '106',
+ 'info': ['美吉姆全面引进了拥有近30年历史、美国专业的音乐早教课程-Music '
+          'Together和全美极具综合性的儿童艺术教育课程Abrakadoodle，成为全球唯一同时开设这三大优秀早期教育课程的早教机构。'],
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '海淀区', '苹果园', '早教中心', '艺术启蒙'],
+ 'nearby_shops': '',
+ 'original_latitude': '39.93136',
+ 'original_longitude': '116.25378',
+ 'overallRate': ['四星商户'],
+ 'phone': ['4001103237'],
+ 'picurl': ['//p0.meituan.net/wedding/236b608c22d9bda991ab08de942144e3326645.png%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HEHFTJZVVFBUCW',
+ 'price': '￥13694',
+ 'region': '海淀区',
+ 'shopName': '美吉姆北京玉泉路京粮广场中心',
+ 'star1': '4',
+ 'star2': '1',
+ 'star3': '2',
+ 'star4': '12',
+ 'star5': '87',
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': '运通106、355、336、977、568、981、特10地铁6号线在海淀五路居下车转981、336、运通106、977地铁1号线在玉泉路站下车转941快、特10、389',
+ 'url': 'http://www.dianping.com/shop/18204015'}
+2017-02-23 10:28:20 [root] INFO: Failed(:exception) proxy:http://124.88.67.81:81 for processing http://www.dianping.com/shop/17944333
+2017-02-23 10:28:20 [root] INFO: Request <GET http://www.dianping.com/shop/17944333> using proxy:http://183.61.236.55:3128
+2017-02-23 10:28:20 [root] INFO: Good proxy:http://124.88.67.17:843 for processing <200 http://www.dianping.com/shop/4548709>
+2017-02-23 10:28:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/4548709> (referer: http://www.dianping.com/search/category/2/70/g27761r17)
+2017-02-23 10:28:20 [root] INFO: Request <GET http://www.dianping.com/shop/21684139> using proxy:http://130.207.85.164:80
+2017-02-23 10:28:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/4548709>
+{'addr': ['远大路1号金源新燕莎MALL4楼'],
+ 'branch': '7',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '早教中心',
+ 'commentNum': '81',
+ 'info': ['美吉姆于1983年由William Caplin和 Yakov & Susi '
+          'Sherman共同努力合作创立，最初的两家中心位于加利福尼亚的圣莫尼卡市和范奈斯,美吉姆中国已开业230余家中心.'],
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '海淀区', '远大路', '早教中心', '艺术启蒙'],
+ 'nearby_shops': '',
+ 'original_latitude': '39.95838',
+ 'original_longitude': '116.29086',
+ 'overallRate': ['四星商户'],
+ 'phone': ['4000303096-03082'],
+ 'picurl': ['//p1.meituan.net/wedding/0d25b31f9436777eed50c019b72e335b1200086.png%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HEHJRRZVVGRUTJ',
+ 'price': '￥16133',
+ 'region': '海淀区',
+ 'shopName': '美吉姆北京金源中心(金源新燕莎MALL店)',
+ 'star1': '9',
+ 'star2': '2',
+ 'star3': '4',
+ 'star4': '19',
+ 'star5': '47',
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': '33、334、355、360、365、425、611、619、664、714、992、运通101、运通104、运通109、运通114、运通123路',
+ 'url': 'http://www.dianping.com/shop/4548709'}
+2017-02-23 10:28:20 [root] INFO: Failed(:exception) proxy:http://107.155.113.159:1080 for processing http://www.dianping.com/shop/22153468
+2017-02-23 10:28:20 [root] INFO: Request <GET http://www.dianping.com/shop/22153468> using proxy:http://124.88.67.17:82
+2017-02-23 10:28:21 [root] INFO: Good proxy:http://124.88.67.17:82 for processing <200 http://www.dianping.com/shop/72476071>
+2017-02-23 10:28:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/72476071> (referer: http://www.dianping.com/search/category/2/70/g193r9157)
+2017-02-23 10:28:21 [root] INFO: Request <GET http://www.dianping.com/shop/21658615> using proxy:http://47.89.44.105:8080
+2017-02-23 10:28:21 [root] INFO: Good proxy:http://50.93.197.100:1080 for processing <200 http://www.dianping.com/shop/19169627>
+2017-02-23 10:28:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/19169627> (referer: http://www.dianping.com/search/category/2/70/g27761r17)
+2017-02-23 10:28:21 [root] INFO: Request <GET http://www.dianping.com/shop/68130214> using proxy:http://5.2.74.91:1080
+2017-02-23 10:28:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/72476071>
+{'addr': ['中粮万科半岛购物中心二层(卯田艺创空间二层)'],
+ 'branch': '0',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '亲子摄影',
+ 'commentNum': '',
+ 'hour': ['9:00-8:00 周一,周三,周四,周五,周六,周日'],
+ 'info': 'nosomething',
+ 'map_type': 'Null',
+ 'navigation': ['北京亲子', '房山区', '长阳镇', '亲子摄影'],
+ 'nearby_shops': ['奥申婴幼儿游泳中心(长阳半...', '莫莉幻想(北京长阳万科店)', '悠游堂(房山万科店)'],
+ 'original_latitude': '39.75333',
+ 'original_longitude': '116.21082',
+ 'overallRate': ['准四星商户'],
+ 'phone': ['010--56206651'],
+ 'picurl': ['//p1.meituan.net/wedding/23ae1fcdeb013ef715386f6eeffed9fe244866.jpg%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HERRITZVUWSHWW',
+ 'price': '-',
+ 'region': '房山区',
+ 'shopName': '米可暗房工坊',
+ 'star1': '',
+ 'star2': '',
+ 'star3': '',
+ 'star4': '',
+ 'star5': '',
+ 'subregion': '',
+ 'tags': ['亲子摄影', '长阳镇'],
+ 'traffic': ['尚无公交信息'],
+ 'url': 'http://www.dianping.com/shop/72476071'}
+2017-02-23 10:28:21 [root] INFO: Failed(:exception) proxy:http://106.185.39.152:8080 for processing http://www.dianping.com/shop/67304514
+2017-02-23 10:28:21 [root] INFO: Request <GET http://www.dianping.com/shop/67304514> using proxy:http://121.14.6.236:80
+2017-02-23 10:28:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/19169627>
+{'addr': ['五棵松复兴路69号卓展购物中心3F(3A-003)'],
+ 'branch': '1',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '早教中心',
+ 'commentNum': '191',
+ 'info': ['纽约国际儿童俱乐部五棵松卓展中心位于五棵松万事达中心西北侧，紧靠西四环，交通便利，中心面积1200平米，为宝宝提供了充足的空间，为0-5岁的宝宝提供最专业的课程体系。'],
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '海淀区', '公主坟/万寿路', '早教中心'],
+ 'nearby_shops': '',
+ 'original_latitude': '39.91391',
+ 'original_longitude': '116.27941',
+ 'overallRate': ['准五星商户'],
+ 'phone': ['56208166\xa0\xa088199517'],
+ 'picurl': ['//p1.meituan.net/apiback/7a2c245b23b25102d3108c17f309706b383761.jpg%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HEIGIVZVVFFAEH',
+ 'price': '￥13204',
+ 'region': '海淀区',
+ 'shopName': 'NYC纽约国际北京五棵松中心(五棵松卓展中心)',
+ 'star1': '2',
+ 'star2': '2',
+ 'star3': '5',
+ 'star4': '11',
+ 'star5': '172',
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': 'Null',
+ 'url': 'http://www.dianping.com/shop/19169627'}
+2017-02-23 10:28:22 [root] INFO: Good proxy:http://124.88.67.10:83 for processing <200 http://www.dianping.com/shop/67694527>
+2017-02-23 10:28:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/67694527> (referer: http://www.dianping.com/search/category/2/70/g193r9158)
+2017-02-23 10:28:22 [root] INFO: Request <GET http://www.dianping.com/shop/67436915> using proxy:http://124.88.67.19:843
+2017-02-23 10:28:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/67694527>
+{'addr': ['北京方糖6单元320'],
+ 'branch': '0',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '亲子摄影',
+ 'commentNum': '19',
+ 'hour': ['9:00-18:00 周一至周日'],
+ 'info': 'nosomething',
+ 'map_type': 'Null',
+ 'navigation': ['北京亲子', '顺义区', '后沙峪', '亲子摄影', '儿童摄影'],
+ 'nearby_shops': ['人之初四维彩超摄影(顺义店)', '御贝国际婴幼儿游泳主题会所...', '新创客机器人乐高活动中心(...'],
+ 'original_latitude': '40.10272',
+ 'original_longitude': '116.5572',
+ 'overallRate': ['四星商户'],
+ 'phone': ['010--80488470'],
+ 'picurl': ['//p0.meituan.net/ugcpic/9954aa505565f4cbac046388888851fd%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HERJEJZVWASEIA',
+ 'price': '-',
+ 'region': '顺义区',
+ 'shopName': '50摄影',
+ 'star1': '0',
+ 'star2': '0',
+ 'star3': '0',
+ 'star4': '0',
+ 'star5': '7',
+ 'subregion': '',
+ 'tags': ['儿童摄影', '后沙峪'],
+ 'traffic': ['尚无公交信息'],
+ 'url': 'http://www.dianping.com/shop/67694527'}
+2017-02-23 10:28:24 [root] INFO: Good proxy:http://50.93.197.100:1080 for processing <200 http://www.dianping.com/shop/4712901>
+2017-02-23 10:28:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/4712901> (referer: http://www.dianping.com/search/category/2/70/g193r20)
+2017-02-23 10:28:24 [root] INFO: Request <GET http://www.dianping.com/shop/7707465> using proxy:http://222.33.192.238:8118
+2017-02-23 10:28:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/4712901>
+{'addr': ['枫竹苑一区0206号(丰台店近地铁4号线公益西桥C口)'],
+ 'branch': '1',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '亲子摄影',
+ 'commentNum': '843',
+ 'hour': ['9:00-18:00 周一至周日'],
+ 'info': 'nosomething',
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '丰台区', '公益西桥', '亲子摄影', '儿童摄影'],
+ 'nearby_shops': '',
+ 'original_latitude': '39.83572',
+ 'original_longitude': '116.37811',
+ 'overallRate': ['五星商户'],
+ 'phone': ['010-56022081\xa0\xa0010-57721075'],
+ 'picurl': ['//p0.meituan.net/wedding/a57adc1f75f357eb0f45970d56364033706960.jpg%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HETSRHZVVFUAHH',
+ 'price': '￥1942',
+ 'region': '丰台区',
+ 'shopName': '柯迪凯蒂儿童摄影(公益西桥店)',
+ 'special': ['无隐形消费'],
+ 'star1': '7',
+ 'star2': '5',
+ 'star3': '6',
+ 'star4': '41',
+ 'star5': '785',
+ 'start': ['2011年'],
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': '地铁线路：地铁4号线公益西桥下（C口出往东）377路; 511路; 556路; 825路; 990路; 专26路枫竹苑站下。',
+ 'url': 'http://www.dianping.com/shop/4712901'}
+2017-02-23 10:28:25 [root] INFO: Failed(:exception) proxy:http://218.17.43.228:3128 for processing http://www.dianping.com/shop/18597538
+2017-02-23 10:28:25 [root] INFO: Request <GET http://www.dianping.com/shop/18597538> using proxy:http://125.162.208.252:80
+2017-02-23 10:28:25 [root] INFO: Failed(:exception) proxy:http://70.55.222.104:80 for processing http://www.dianping.com/shop/3657541
+2017-02-23 10:28:25 [root] INFO: Request <GET http://www.dianping.com/shop/3657541> using proxy:http://152.92.200.2:80
+2017-02-23 10:28:25 [root] INFO: Good proxy:http://124.88.67.10:83 for processing <200 http://www.dianping.com/search/category/2/70/g27761r17p1>
+2017-02-23 10:28:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/search/category/2/70/g27761r17p1> (referer: http://www.dianping.com/search/category/2/70/g27761r17p9?aid=f180626256063317e2d30bfc0f76477fe0b8cc988bb471c764aef468895e813db53659b74d3478b17f97774d4b0d0e4fa3f53a154a8fc5b3f02a71e87ebc29c3863783d9eb2ee46d3a44b35fc7ac6f95)
+2017-02-23 10:28:25 [root] INFO: Request <GET http://www.dianping.com/shop/16009534> using proxy:http://194.185.104.166:80
+2017-02-23 10:28:25 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/search/category/2/70/g27761r17p2?aid=f180626256063317e2d30bfc0f76477fe0b8cc988bb471c764aef468895e813db53659b74d3478b17f97774d4b0d0e4fa3f53a154a8fc5b3f02a71e87ebc29c3863783d9eb2ee46d3a44b35fc7ac6f95>
+2017-02-23 10:28:25 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/search/category/2/70/g27761r17p3?aid=f180626256063317e2d30bfc0f76477fe0b8cc988bb471c764aef468895e813db53659b74d3478b17f97774d4b0d0e4fa3f53a154a8fc5b3f02a71e87ebc29c3863783d9eb2ee46d3a44b35fc7ac6f95>
+2017-02-23 10:28:25 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/search/category/2/70/g27761r17p4?aid=f180626256063317e2d30bfc0f76477fe0b8cc988bb471c764aef468895e813db53659b74d3478b17f97774d4b0d0e4fa3f53a154a8fc5b3f02a71e87ebc29c3863783d9eb2ee46d3a44b35fc7ac6f95>
+2017-02-23 10:28:25 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/search/category/2/70/g27761r17p5?aid=f180626256063317e2d30bfc0f76477fe0b8cc988bb471c764aef468895e813db53659b74d3478b17f97774d4b0d0e4fa3f53a154a8fc5b3f02a71e87ebc29c3863783d9eb2ee46d3a44b35fc7ac6f95>
+2017-02-23 10:28:25 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/search/category/2/70/g27761r17p6?aid=f180626256063317e2d30bfc0f76477fe0b8cc988bb471c764aef468895e813db53659b74d3478b17f97774d4b0d0e4fa3f53a154a8fc5b3f02a71e87ebc29c3863783d9eb2ee46d3a44b35fc7ac6f95>
+2017-02-23 10:28:25 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/search/category/2/70/g27761r17p7?aid=f180626256063317e2d30bfc0f76477fe0b8cc988bb471c764aef468895e813db53659b74d3478b17f97774d4b0d0e4fa3f53a154a8fc5b3f02a71e87ebc29c3863783d9eb2ee46d3a44b35fc7ac6f95>
+2017-02-23 10:28:25 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/search/category/2/70/g27761r17p8?aid=f180626256063317e2d30bfc0f76477fe0b8cc988bb471c764aef468895e813db53659b74d3478b17f97774d4b0d0e4fa3f53a154a8fc5b3f02a71e87ebc29c3863783d9eb2ee46d3a44b35fc7ac6f95>
+2017-02-23 10:28:25 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/search/category/2/70/g27761r17p9?aid=f180626256063317e2d30bfc0f76477fe0b8cc988bb471c764aef468895e813db53659b74d3478b17f97774d4b0d0e4fa3f53a154a8fc5b3f02a71e87ebc29c3863783d9eb2ee46d3a44b35fc7ac6f95>
+2017-02-23 10:28:25 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/shop/32422997>
+2017-02-23 10:28:25 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/shop/63058310>
+2017-02-23 10:28:25 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/shop/5632807>
+2017-02-23 10:28:25 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/shop/22153468>
+2017-02-23 10:28:25 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/shop/6228485>
+2017-02-23 10:28:25 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/shop/79223807>
+2017-02-23 10:28:25 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/shop/18204015>
+2017-02-23 10:28:25 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/shop/19169627>
+2017-02-23 10:28:25 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/shop/23461624>
+2017-02-23 10:28:25 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/shop/17674633>
+2017-02-23 10:28:25 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/shop/18125588>
+2017-02-23 10:28:25 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/shop/4548709>
+2017-02-23 10:28:25 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/shop/58894999>
+2017-02-23 10:28:25 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/shop/18597538>
+2017-02-23 10:28:25 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/shop/6216780>
+2017-02-23 10:28:28 [root] INFO: Failed(:exception) proxy:http://107.174.68.214:1080 for processing http://www.dianping.com/shop/22073363
+2017-02-23 10:28:28 [root] INFO: Request <GET http://www.dianping.com/shop/22073363> using proxy:http://45.32.42.133:8081
+2017-02-23 10:28:29 [root] INFO: Proxy http://40.68.88.27:8080 meet faked 500 Internal Server Error 
+2017-02-23 10:28:29 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.dianping.com/shop/65959310> (failed 1 times): 500 Internal Server Error
+2017-02-23 10:28:29 [root] INFO: Request <GET http://www.dianping.com/shop/21109546> using proxy:http://124.88.67.24:843
+2017-02-23 10:28:30 [root] INFO: Failed(:exception) proxy:http://125.162.208.252:80 for processing http://www.dianping.com/shop/32475301
+2017-02-23 10:28:30 [root] INFO: Request <GET http://www.dianping.com/shop/32475301> using proxy:http://115.159.185.186:8088
+2017-02-23 10:28:30 [root] INFO: Good proxy:http://163.121.188.3:8080 for processing <200 http://www.dianping.com/shop/49316522>
+2017-02-23 10:28:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/49316522> (referer: http://www.dianping.com/search/category/2/70/g193c434)
+2017-02-23 10:28:30 [root] INFO: Request <GET http://www.dianping.com/shop/73501820> using proxy:http://47.90.74.111:8088
+2017-02-23 10:28:30 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/49316522>
+{'addr': '',
+ 'branch': '0',
+ 'channel': '密云区亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '亲子摄影',
+ 'commentNum': '',
+ 'map_type': 'Null',
+ 'navigation': ['密云区亲子', '密云县其他', '亲子摄影', '儿童摄影'],
+ 'nearby_group': '',
+ 'nearby_shops': '',
+ 'original_latitude': '40.36782',
+ 'original_longitude': '116.8467',
+ 'overallRate': ['该商户暂无星级'],
+ 'phone': '',
+ 'picurl': ['//qcloud.dpfile.com/pc/gNJUV9t1w22QP7sYezZ6LCmeXIAGwAiQ7pHPKa-Um08WU2ewlIlUciP7vZWxkXpm.jpg'],
+ 'poi': 'HESCUDZVWVDVTC',
+ 'price': '-',
+ 'region': '密云县',
+ 'shopName': '精灵宝贝天地',
+ 'star1': '',
+ 'star2': '',
+ 'star3': '',
+ 'star4': '',
+ 'star5': '',
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': 'Null',
+ 'url': 'http://www.dianping.com/shop/49316522'}
+2017-02-23 10:28:30 [root] INFO: Failed(:exception) proxy:http://221.195.53.117:8998 for processing http://www.dianping.com/shop/6228485
+2017-02-23 10:28:30 [root] INFO: Request <GET http://www.dianping.com/shop/6228485> using proxy:http://47.90.74.111:8088
+2017-02-23 10:28:31 [root] INFO: Failed(:exception) proxy:http://52.65.154.142:80 for processing http://www.dianping.com/shop/67509711
+2017-02-23 10:28:31 [root] INFO: Request <GET http://www.dianping.com/shop/67509711> using proxy:http://121.17.54.44:8998
+2017-02-23 10:28:31 [root] INFO: Good proxy:http://124.88.67.17:82 for processing <200 http://www.dianping.com/shop/22153468>
+2017-02-23 10:28:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/22153468> (referer: http://www.dianping.com/search/category/2/70/g27761r17)
+2017-02-23 10:28:31 [root] INFO: Request <GET http://www.dianping.com/shop/21028464> using proxy:http://50.93.200.90:1080
+2017-02-23 10:28:31 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/22153468>
+{'addr': ['清河嘉园东区1号楼3层301(清河翠微)'],
+ 'branch': '0',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '早教中心',
+ 'commentNum': '7',
+ 'info': ['积木宝贝早教针对中国儿童研发出体能、智能、心理能力平衡发展的早期教育理论体系，针对性研发出国内独有的科学测评体系，通过系统性的课程体系，让宝宝体能、智能和心理能力平衡发展，全面拥有实现梦想的能力。'],
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '海淀区', '清河', '早教中心'],
+ 'nearby_shops': '',
+ 'original_latitude': '40.0303',
+ 'original_longitude': '116.34685',
+ 'overallRate': ['准四星商户'],
+ 'phone': ['4000303096-06494'],
+ 'picurl': ['//p1.meituan.net/wedding/deecd72481b00d9ed8e1017a238e655c353644.jpg%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HEHDGWZVVJTUDH',
+ 'price': '-',
+ 'region': '海淀区',
+ 'shopName': '积木宝贝科学早教(清河店)',
+ 'star1': '1',
+ 'star2': '0',
+ 'star3': '0',
+ 'star4': '1',
+ 'star5': '5',
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': '公交车：639、606、490、355、632、606清河下车，往南国清河桥下过马路西南角清河嘉园东区1号楼3层301-积木宝贝\n'
+            '地铁：8号线永泰庄站A口出倒89清河站下车往北国清河桥西南角',
+ 'url': 'http://www.dianping.com/shop/22153468'}
+2017-02-23 10:28:32 [root] INFO: Failed(:exception) proxy:http://47.90.74.111:8088 for processing http://www.dianping.com/shop/79548617
+2017-02-23 10:28:32 [root] INFO: Request <GET http://www.dianping.com/shop/79548617> using proxy:http://5.2.74.224:1080
+2017-02-23 10:28:32 [root] INFO: Failed(:exception) proxy:http://5.2.74.91:1080 for processing http://www.dianping.com/shop/68130214
+2017-02-23 10:28:32 [root] INFO: Request <GET http://www.dianping.com/shop/68130214> using proxy:http://52.65.154.142:80
+2017-02-23 10:28:35 [root] INFO: Failed(:exception) proxy:http://50.93.203.13:1080 for processing http://www.dianping.com/search/category/2/70/g27761r16
+2017-02-23 10:28:35 [root] INFO: Request <GET http://www.dianping.com/search/category/2/70/g27761r16> using proxy:http://163.121.188.3:8080
+2017-02-23 10:28:35 [root] INFO: Failed(:exception) proxy:http://122.212.129.9:80 for processing http://www.dianping.com/shop/22180021
+2017-02-23 10:28:35 [root] INFO: Request <GET http://www.dianping.com/shop/22180021> using proxy:http://175.103.38.30:8081
+2017-02-23 10:28:36 [root] INFO: Proxy http://152.92.200.2:80 meet faked 200 OK 
+2017-02-23 10:28:36 [root] INFO: Request <GET http://www.dianping.com/shop/3657541> using proxy:http://61.191.41.130:80
+2017-02-23 10:28:39 [root] INFO: Failed(:exception) proxy:http://183.61.236.55:3128 for processing http://www.dianping.com/shop/17944333
+2017-02-23 10:28:39 [root] INFO: Request <GET http://www.dianping.com/shop/17944333> using proxy:http://58.221.38.170:8080
+2017-02-23 10:28:40 [root] INFO: Failed(:exception) proxy:http://130.207.85.164:80 for processing http://www.dianping.com/shop/21684139
+2017-02-23 10:28:40 [root] INFO: Request <GET http://www.dianping.com/shop/21684139> using proxy:http://124.88.67.19:843
+2017-02-23 10:28:40 [root] INFO: Failed(:exception) proxy:http://47.89.44.105:8080 for processing http://www.dianping.com/shop/21658615
+2017-02-23 10:28:40 [root] INFO: Request <GET http://www.dianping.com/shop/21658615> using proxy:http://121.193.143.249:80
+2017-02-23 10:28:41 [root] INFO: Failed(:exception) proxy:http://121.14.6.236:80 for processing http://www.dianping.com/shop/67304514
+2017-02-23 10:28:41 [root] INFO: Request <GET http://www.dianping.com/shop/67304514> using proxy:http://221.195.53.117:8998
+2017-02-23 10:28:41 [root] INFO: Good proxy:http://124.88.67.24:843 for processing <200 http://www.dianping.com/shop/21109546>
+2017-02-23 10:28:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/21109546> (referer: http://www.dianping.com/search/category/2/70/g27761r14)
+2017-02-23 10:28:41 [root] INFO: Request <GET http://www.dianping.com/shop/3700114> using proxy:http://46.167.210.2:8118
+2017-02-23 10:28:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/21109546>
+{'addr': ['北四环东路73号远洋未来广场商场3层(近联合大学)'],
+ 'branch': '3',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '早教中心',
+ 'commentNum': '37',
+ 'info': ['Waterbabies水孩子，中国水育早教领导品牌。最适合中国宝宝的水育课程，同时强健宝宝的体能、智能以及心理能力，使其全面均衡成长，激发宝宝的无限潜能！让宝宝的未来，活力泳无止境！'],
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '朝阳区', '亚运村', '早教中心'],
+ 'nearby_shops': '',
+ 'original_latitude': '39.98998',
+ 'original_longitude': '116.43263',
+ 'overallRate': ['四星商户'],
+ 'phone': ['84445781'],
+ 'picurl': ['//qcloud.dpfile.com/pc/MHBNwKx1rt11Y216FpjP1LKAyoCH3NeYRP8679akpJ2c4IoerzVTwqFERZvpNU16.jpg'],
+ 'poi': 'HERESBZVVRVJFH',
+ 'price': '￥218',
+ 'region': '朝阳区',
+ 'shopName': '水孩子水育早教(未来广场店)',
+ 'star1': '1',
+ 'star2': '0',
+ 'star3': '2',
+ 'star4': '2',
+ 'star5': '32',
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': '96路; 96路区间; 516路市区线; 528路; 600路内环; 600路外环; 640路; 663路; 681路; '
+            '803路; 856路; 868路',
+ 'url': 'http://www.dianping.com/shop/21109546'}
+2017-02-23 10:28:42 [root] INFO: Failed(:exception) proxy:http://124.88.67.19:843 for processing http://www.dianping.com/shop/67436915
+2017-02-23 10:28:42 [root] INFO: Request <GET http://www.dianping.com/shop/67436915> using proxy:http://124.88.67.17:843
+2017-02-23 10:28:42 [root] INFO: Failed(:exception) proxy:http://222.33.192.238:8118 for processing http://www.dianping.com/shop/7707465
+2017-02-23 10:28:42 [root] INFO: Request <GET http://www.dianping.com/shop/7707465> using proxy:http://14.125.51.113:8888
+2017-02-23 10:28:45 [root] INFO: Failed(:exception) proxy:http://125.162.208.252:80 for processing http://www.dianping.com/shop/18597538
+2017-02-23 10:28:45 [root] INFO: Request <GET http://www.dianping.com/shop/18597538> using proxy:http://40.68.88.27:8080
+2017-02-23 10:28:46 [root] INFO: Failed(:exception) proxy:http://194.185.104.166:80 for processing http://www.dianping.com/shop/16009534
+2017-02-23 10:28:46 [root] INFO: Request <GET http://www.dianping.com/shop/16009534> using proxy:http://45.32.42.133:8081
+2017-02-23 10:28:46 [root] INFO: Failed(:exception) proxy:http://5.2.74.224:1080 for processing http://www.dianping.com/shop/79548617
+2017-02-23 10:28:46 [root] INFO: Request <GET http://www.dianping.com/shop/79548617> using proxy:http://122.189.237.148:8118
+2017-02-23 10:28:49 [root] INFO: Failed(:exception) proxy:http://45.32.42.133:8081 for processing http://www.dianping.com/shop/22073363
+2017-02-23 10:28:49 [root] INFO: Request <GET http://www.dianping.com/shop/22073363> using proxy:http://124.88.67.17:843
+2017-02-23 10:28:50 [root] INFO: Failed(:exception) proxy:http://115.159.185.186:8088 for processing http://www.dianping.com/shop/32475301
+2017-02-23 10:28:50 [root] INFO: Request <GET http://www.dianping.com/shop/32475301> using proxy:http://183.239.194.148:8080
+2017-02-23 10:28:51 [root] INFO: Failed(:exception) proxy:http://47.90.74.111:8088 for processing http://www.dianping.com/shop/73501820
+2017-02-23 10:28:51 [root] INFO: Request <GET http://www.dianping.com/shop/73501820> using proxy:http://124.88.67.10:83
+2017-02-23 10:28:51 [root] INFO: Good proxy:http://163.121.188.3:8080 for processing <200 http://www.dianping.com/search/category/2/70/g27761r16>
+2017-02-23 10:28:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/search/category/2/70/g27761r16> (referer: None)
+2017-02-23 10:28:51 [root] INFO: Request <GET http://www.dianping.com/shop/19169648> using proxy:http://50.93.204.108:1080
+2017-02-23 10:28:51 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/shop/5181263>
+2017-02-23 10:28:51 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.dianping.com/shop/5997065>
+2017-02-23 10:28:51 [root] INFO: Failed(:exception) proxy:http://47.90.74.111:8088 for processing http://www.dianping.com/shop/6228485
+2017-02-23 10:28:51 [root] INFO: Request <GET http://www.dianping.com/shop/6228485> using proxy:http://125.166.224.142:80
+2017-02-23 10:28:51 [root] INFO: Good proxy:http://61.191.41.130:80 for processing <200 http://www.dianping.com/shop/3657541>
+2017-02-23 10:28:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/3657541> (referer: http://www.dianping.com/search/category/2/70/g193r17)
+2017-02-23 10:28:51 [root] INFO: Request <GET http://www.dianping.com/shop/22894341> using proxy:http://36.66.113.74:8080
+2017-02-23 10:28:51 [root] INFO: Good proxy:http://58.221.38.170:8080 for processing <200 http://www.dianping.com/shop/17944333>
+2017-02-23 10:28:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/17944333> (referer: http://www.dianping.com/search/category/2/70/g193r20)
+2017-02-23 10:28:51 [root] INFO: Request <GET http://www.dianping.com/shop/27009160> using proxy:http://50.93.200.212:1080
+2017-02-23 10:28:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/3657541>
+{'addr': ['远大路1号金源新燕莎MallB1楼儿童成长天地东区A6'],
+ 'branch': '0',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '亲子摄影',
+ 'commentNum': '2049',
+ 'hour': ['10：00-21:00'],
+ 'info': 'nosomething',
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '海淀区', '远大路', '亲子摄影', '儿童摄影'],
+ 'nearby_shops': '',
+ 'original_latitude': '39.95808',
+ 'original_longitude': '116.29001',
+ 'overallRate': ['准五星商户'],
+ 'phone': ['4001105536'],
+ 'picurl': ['//p0.meituan.net/wedding/65d4c951045ed30b7a1074778e450d701714634.jpg%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HEHJGTZVVGRGJC',
+ 'price': '￥3276',
+ 'region': '海淀区',
+ 'shopName': 'Kidsmile Studio儿童摄影-金源店(小鬼当佳旗下品牌)',
+ 'special': ['无隐形消费，家人合影'],
+ 'star1': '43',
+ 'star2': '17',
+ 'star3': '20',
+ 'star4': '101',
+ 'star5': '1869',
+ 'start': ['2002年'],
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': '33、334、355、360、365、425、611、619、664、714、992、运通101、运通104、运通109、运通114、运通123路',
+ 'url': 'http://www.dianping.com/shop/3657541'}
+2017-02-23 10:28:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/17944333>
+{'addr': ['西二环菜户营桥豪苑大厦A座2107（二环路边）(鹏润家园、哈特商务酒店、财富...'],
+ 'branch': '1',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '亲子摄影',
+ 'commentNum': '515',
+ 'hour': ['9:00-18:00 周一至周日'],
+ 'info': 'nosomething',
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '丰台区', '北京西站/六里桥', '亲子摄影', '儿童摄影'],
+ 'nearby_shops': '',
+ 'original_latitude': '39.87048',
+ 'original_longitude': '116.34779',
+ 'overallRate': ['五星商户'],
+ 'phone': ['13167556735\xa0\xa0010-63332368'],
+ 'picurl': ['//p0.meituan.net/wedding/c968d42c0e7de4a4035cadce0f4775e4628781.jpg%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HESCEJZVVFVTDV',
+ 'price': '￥1605',
+ 'region': '丰台区',
+ 'shopName': '一二一高端儿童摄影(豪苑大厦店)',
+ 'special': ['无隐形消费'],
+ 'star1': '4',
+ 'star2': '3',
+ 'star3': '5',
+ 'star4': '29',
+ 'star5': '474',
+ 'start': ['2010年'],
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': '59路、5路、340路、676路、456路、423路、604路、410路、381路、351路、340路、49路、122路.......菜户营桥或菜户营桥北下车既是',
+ 'url': 'http://www.dianping.com/shop/17944333'}
+2017-02-23 10:28:52 [root] INFO: Good proxy:http://121.193.143.249:80 for processing <200 http://www.dianping.com/shop/21658615>
+2017-02-23 10:28:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/21658615> (referer: http://www.dianping.com/search/category/2/70/g27761r14)
+2017-02-23 10:28:52 [root] INFO: Request <GET http://www.dianping.com/shop/5708975> using proxy:http://183.239.194.148:8080
+2017-02-23 10:28:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/21658615>
+{'addr': ['尚街购物中心二层(甘露园)'],
+ 'branch': '0',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '早教中心',
+ 'commentNum': '158',
+ 'info': ['悦宝园早教中心采用纯美式教育体系，由来自美国独特权威的悦宝灵动、悦宝创意、悦宝韵律、幼儿美式口语四大课程体系构成，是美国新时代早教品牌。'],
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '朝阳区', '十里堡', '早教中心'],
+ 'nearby_shops': '',
+ 'original_latitude': '39.91693',
+ 'original_longitude': '116.5175',
+ 'overallRate': ['准五星商户'],
+ 'phone': ['4000303096-04702'],
+ 'picurl': ['//p1.meituan.net/wedding/3b8f834137ae41a155103ec96afdc35b2378685.jpg%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HEVCGWZVVSDDDV',
+ 'price': '￥18032',
+ 'region': '朝阳区',
+ 'shopName': '美国悦宝园早教(青年路中心)',
+ 'star1': '3',
+ 'star2': '2',
+ 'star3': '3',
+ 'star4': '12',
+ 'star5': '138',
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': '公交站：青年路南口 甘露园  地铁站：青年路',
+ 'url': 'http://www.dianping.com/shop/21658615'}
+2017-02-23 10:28:52 [root] INFO: Failed(:exception) proxy:http://121.17.54.44:8998 for processing http://www.dianping.com/shop/67509711
+2017-02-23 10:28:52 [root] INFO: Request <GET http://www.dianping.com/shop/67509711> using proxy:http://47.89.44.105:8080
+2017-02-23 10:28:52 [root] INFO: Failed(:exception) proxy:http://50.93.200.90:1080 for processing http://www.dianping.com/shop/21028464
+2017-02-23 10:28:52 [root] INFO: Request <GET http://www.dianping.com/shop/21028464> using proxy:http://36.80.235.14:80
+2017-02-23 10:28:53 [root] INFO: Good proxy:http://124.88.67.17:843 for processing <200 http://www.dianping.com/shop/67436915>
+2017-02-23 10:28:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/67436915> (referer: http://www.dianping.com/search/category/2/70/g27761r14)
+2017-02-23 10:28:53 [root] INFO: Request <GET http://www.dianping.com/shop/3923032> using proxy:http://50.93.200.90:1080
+2017-02-23 10:28:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/67436915>
+{'addr': ['朝阳公园路6号蓝色港湾2层(麦当劳斜对面)'],
+ 'branch': '0',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '早教中心',
+ 'commentNum': '51',
+ 'info': ['来自纽约的五星级早教品牌，源于美国纽约曼哈顿。纽约国际儿童俱乐部蓝港中心位于朝阳公园北侧，环境优美，交通便利，中心面积1000平米，为宝宝提供了充足的空间，为0-5岁的宝宝提供最专业的课程体系。'],
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '朝阳区', '朝阳公园/团结湖', '早教中心'],
+ 'nearby_shops': '',
+ 'original_latitude': '39.94921',
+ 'original_longitude': '116.47542',
+ 'overallRate': ['准五星商户'],
+ 'phone': ['4000303096-06444'],
+ 'picurl': ['//p0.meituan.net/wedding/356ade73d0dd325670f315889945cd13271010.jpg%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HETFGAZVVRWFWS',
+ 'price': '-',
+ 'region': '朝阳区',
+ 'shopName': '纽约国际儿童俱乐部早教中心(蓝色港湾店)',
+ 'star1': '1',
+ 'star2': '0',
+ 'star3': '0',
+ 'star4': '3',
+ 'star5': '48',
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': 'Null',
+ 'url': 'http://www.dianping.com/shop/67436915'}
+2017-02-23 10:28:53 [root] INFO: Failed(:exception) proxy:http://14.125.51.113:8888 for processing http://www.dianping.com/shop/7707465
+2017-02-23 10:28:53 [root] INFO: Request <GET http://www.dianping.com/shop/7707465> using proxy:http://119.29.40.194:8888
+2017-02-23 10:28:54 [root] INFO: Failed(:exception) proxy:http://40.68.88.27:8080 for processing http://www.dianping.com/shop/18597538
+2017-02-23 10:28:54 [root] INFO: Request <GET http://www.dianping.com/shop/18597538> using proxy:http://124.88.67.34:843
+2017-02-23 10:28:54 [root] INFO: Failed(:exception) proxy:http://122.189.237.148:8118 for processing http://www.dianping.com/shop/79548617
+2017-02-23 10:28:54 [root] INFO: Request <GET http://www.dianping.com/shop/79548617> using proxy:http://125.162.208.252:80
+2017-02-23 10:28:55 [root] INFO: Good proxy:http://124.88.67.17:843 for processing <200 http://www.dianping.com/shop/22073363>
+2017-02-23 10:28:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/22073363> (referer: http://www.dianping.com/search/category/2/70/g193r17)
+2017-02-23 10:28:55 [root] INFO: Request <GET http://www.dianping.com/shop/6830656> using proxy:http://47.89.41.164:80
+2017-02-23 10:28:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/22073363>
+{'addr': ['建国门外大街16号东方瑞景3号楼1109(赛特商场后面)'],
+ 'branch': '0',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '亲子摄影',
+ 'commentNum': '324',
+ 'hour': ['早9：00--18:00'],
+ 'info': 'nosomething',
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '朝阳区', '国贸', '孕妇写真'],
+ 'nearby_shops': '',
+ 'original_latitude': '39.90661',
+ 'original_longitude': '116.44379',
+ 'overallRate': ['五星商户'],
+ 'phone': ['18810641174'],
+ 'picurl': ['//p0.meituan.net/wedding/1b3248e0f66d978997400f9d086961a2391026.jpg%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HETJJHZVVJCGAA',
+ 'price': '￥1931',
+ 'region': '海淀区',
+ 'shopName': '北京悦孕妇摄影',
+ 'special': ['底片全送，无隐形消费'],
+ 'star1': '3',
+ 'star2': '1',
+ 'star3': '0',
+ 'star4': '7',
+ 'star5': '313',
+ 'start': ['2012年'],
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': '1路; 9路; 43路; 99路; 120路; 126路; 205路夜班车; 403路; 639路; 666路; 668快; '
+            '673路; 804路',
+ 'url': 'http://www.dianping.com/shop/22073363'}
+2017-02-23 10:28:56 [root] INFO: Failed(:exception) proxy:http://52.65.154.142:80 for processing http://www.dianping.com/shop/68130214
+2017-02-23 10:28:56 [root] INFO: Request <GET http://www.dianping.com/shop/68130214> using proxy:http://119.29.40.194:8888
+2017-02-23 10:28:57 [root] INFO: Good proxy:http://124.88.67.10:83 for processing <200 http://www.dianping.com/shop/73501820>
+2017-02-23 10:28:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/73501820> (referer: http://www.dianping.com/search/category/2/70/g27761r14)
+2017-02-23 10:28:57 [root] INFO: Request <GET http://www.dianping.com/shop/17170265> using proxy:http://124.88.67.17:843
+2017-02-23 10:28:57 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/73501820>
+{'addr': ['京顺路111号太阳宫北街比如世界购物中心2层'],
+ 'branch': '0',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '早教中心',
+ 'commentNum': '',
+ 'info': ['优范儿国际早教中心是一家位于北京的婴儿游泳商户，商户为三星商户，共有1个产品可供用户挑选；截至当日，此商户共有0条用户点评。商户电话：4000303096-06889'],
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '朝阳区', '亮马桥/三元桥', '婴儿游泳'],
+ 'nearby_shops': '',
+ 'original_latitude': '39.9678',
+ 'original_longitude': '116.46177',
+ 'overallRate': ['三星商户'],
+ 'phone': ['4000303096-06889'],
+ 'picurl': ['//p0.meituan.net/wedding/025666eba49654c1dc7d811e9c5aa51376611.jpg%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HESITFZVVSBEUP',
+ 'price': '-',
+ 'region': '朝阳区',
+ 'shopName': '优范儿国际早教中心',
+ 'star1': '',
+ 'star2': '',
+ 'star3': '',
+ 'star4': '',
+ 'star5': '',
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': 'Null',
+ 'url': 'http://www.dianping.com/shop/73501820'}
+2017-02-23 10:28:59 [root] INFO: Failed(:exception) proxy:http://175.103.38.30:8081 for processing http://www.dianping.com/shop/22180021
+2017-02-23 10:28:59 [root] INFO: Request <GET http://www.dianping.com/shop/22180021> using proxy:http://96.239.193.241:8080
+2017-02-23 10:29:01 [root] INFO: Failed(:exception) proxy:http://124.88.67.19:843 for processing http://www.dianping.com/shop/21684139
+2017-02-23 10:29:01 [root] INFO: Request <GET http://www.dianping.com/shop/21684139> using proxy:http://122.212.129.9:80
+2017-02-23 10:29:01 [root] INFO: Failed(:exception) proxy:http://221.195.53.117:8998 for processing http://www.dianping.com/shop/67304514
+2017-02-23 10:29:01 [root] INFO: Request <GET http://www.dianping.com/shop/67304514> using proxy:http://124.133.230.254:80
+2017-02-23 10:29:01 [root] INFO: Failed(:exception) proxy:http://46.167.210.2:8118 for processing http://www.dianping.com/shop/3700114
+2017-02-23 10:29:01 [root] INFO: Request <GET http://www.dianping.com/shop/3700114> using proxy:http://121.41.8.7:8888
+2017-02-23 10:29:03 [root] INFO: Failed(:exception) proxy:http://45.32.42.133:8081 for processing http://www.dianping.com/shop/16009534
+2017-02-23 10:29:03 [root] INFO: Request <GET http://www.dianping.com/shop/16009534> using proxy:http://50.93.197.98:1080
+2017-02-23 10:29:04 [root] INFO: Failed(:exception) proxy:http://183.239.194.148:8080 for processing http://www.dianping.com/shop/32475301
+2017-02-23 10:29:04 [root] INFO: Request <GET http://www.dianping.com/shop/32475301> using proxy:http://163.121.188.3:8080
+2017-02-23 10:29:06 [root] INFO: Failed(:exception) proxy:http://50.93.204.108:1080 for processing http://www.dianping.com/shop/19169648
+2017-02-23 10:29:06 [root] INFO: Request <GET http://www.dianping.com/shop/19169648> using proxy:http://40.68.88.27:8080
+2017-02-23 10:29:07 [root] INFO: Failed(:exception) proxy:http://125.166.224.142:80 for processing http://www.dianping.com/shop/6228485
+2017-02-23 10:29:07 [root] INFO: Request <GET http://www.dianping.com/shop/6228485> using proxy:http://124.88.67.81:81
+2017-02-23 10:29:07 [root] INFO: Good proxy:http://124.88.67.34:843 for processing <200 http://www.dianping.com/shop/18597538>
+2017-02-23 10:29:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/18597538> (referer: http://www.dianping.com/search/category/2/70/g27761r17)
+2017-02-23 10:29:08 [root] INFO: Request <GET http://www.dianping.com/shop/15876769> using proxy:http://152.160.35.171:80
+2017-02-23 10:29:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/18597538>
+{'addr': ['西四环四季青桥常青园路83号(凤凰九号)'],
+ 'branch': '1',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '早教中心',
+ 'commentNum': '385',
+ 'info': ['More Sport！ More Health！ More '
+          'Sport！爱贝迪亲子游泳俱乐部坚持：“以中国母婴健康成长为事业，引用英国先进的BIRTHLIGHT母婴水育体系。'],
+ 'map_type': '7',
+ 'navigation': ['北京亲子', '海淀区', '四季青', '早教中心', '亲子游泳'],
+ 'nearby_shops': '',
+ 'original_latitude': '39.94166',
+ 'original_longitude': '116.26673',
+ 'overallRate': ['四星商户'],
+ 'phone': ['88452281\xa0\xa018618370281'],
+ 'picurl': ['//p1.meituan.net/wedding/49f4160c6069bbd50469541da701e74c4053354.jpg%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HEHGTWZVVFRVHT',
+ 'price': '￥246',
+ 'region': '海淀区',
+ 'shopName': '爱贝迪亲子游泳俱乐部',
+ 'star1': '8',
+ 'star2': '1',
+ 'star3': '16',
+ 'star4': '50',
+ 'star5': '310',
+ 'subregion': '',
+ 'tags': '',
+ 'traffic': 'Null',
+ 'url': 'http://www.dianping.com/shop/18597538'}
+2017-02-23 10:29:09 [root] INFO: Failed(:exception) proxy:http://36.66.113.74:8080 for processing http://www.dianping.com/shop/22894341
+2017-02-23 10:29:09 [root] INFO: Request <GET http://www.dianping.com/shop/22894341> using proxy:http://5.189.152.50:3128
+2017-02-23 10:29:11 [root] INFO: Failed(:exception) proxy:http://50.93.200.212:1080 for processing http://www.dianping.com/shop/27009160
+2017-02-23 10:29:11 [root] INFO: Request <GET http://www.dianping.com/shop/27009160> using proxy:http://116.209.84.116:8118
+2017-02-23 10:29:11 [root] INFO: Failed(:exception) proxy:http://183.239.194.148:8080 for processing http://www.dianping.com/shop/5708975
+2017-02-23 10:29:11 [root] INFO: Request <GET http://www.dianping.com/shop/5708975> using proxy:http://124.88.67.14:80
+2017-02-23 10:29:11 [root] INFO: Failed(:exception) proxy:http://47.89.44.105:8080 for processing http://www.dianping.com/shop/67509711
+2017-02-23 10:29:11 [root] INFO: Request <GET http://www.dianping.com/shop/67509711> using proxy:http://121.14.6.236:80
+2017-02-23 10:29:12 [root] INFO: Good proxy:http://124.88.67.17:843 for processing <200 http://www.dianping.com/shop/17170265>
+2017-02-23 10:29:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dianping.com/shop/17170265> (referer: http://www.dianping.com/search/category/2/70/g27761r16)
+2017-02-23 10:29:12 [root] INFO: Request <GET http://www.dianping.com/shop/6860943> using proxy:http://194.185.104.166:80
+2017-02-23 10:29:12 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2017-02-23 10:29:12 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2017-02-23 10:29:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dianping.com/shop/17170265>
+{'addr': ['安贞西里五区4号楼BHG百货3层'],
+ 'branch': '6',
+ 'channel': '北京亲子',
+ 'city_pinyin': 'beijing',
+ 'classify': '早教中心',
+ 'commentNum': '77',
+ 'hour': ['10:00-21:30'],
+ 'info': 'nosomething',
+ 'map_type': 'Null',
+ 'navigation': ['北京亲子', '朝阳区', '新街口', '早教中心'],
+ 'nearby_shops': ['瑞思学科英语(安贞博纳德校...', '绿豆蛙儿童乐园', '鱼乐贝贝婴幼儿游泳水育馆(...'],
+ 'original_latitude': '39.97066',
+ 'original_longitude': '116.40121',
+ 'overallRate': ['四星商户'],
+ 'phone': ['010--64422827'],
+ 'picurl': ['//p0.meituan.net/ugcpic/2db80be2231c2104f96ddb99982f1b3d%40249w_249h_0e_1l%7Cwatermark%3D0'],
+ 'poi': 'HEJWWFZVVJRTDF',
+ 'price': '￥240',
+ 'region': '西城区',
+ 'shopName': '小小运动馆(BHG百货安贞店)',
+ 'star1': '3',
+ 'star2': '3',
+ 'star3': '2',
+ 'star4': '10',
+ 'star5': '21',
+ 'subregion': '',
+ 'tags': ['早教中心', '综合教育', '新街口'],
+ 'traffic': ['尚无公交信息'],
+ 'url': 'http://www.dianping.com/shop/17170265'}
+2017-02-23 10:29:12 [scrapy.extensions.logstats] INFO: Crawled 71 pages (at 23 pages/min), scraped 47 items (at 20 items/min)
+2017-02-23 10:29:13 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
+2017-02-23 10:29:13 [root] INFO: Failed(:exception) proxy:http://96.239.193.241:8080 for processing http://www.dianping.com/shop/22180021
+2017-02-23 10:29:13 [root] INFO: Failed(:exception) proxy:http://119.29.40.194:8888 for processing http://www.dianping.com/shop/7707465
+2017-02-23 10:29:13 [root] INFO: Failed(:exception) proxy:http://119.29.40.194:8888 for processing http://www.dianping.com/shop/68130214
+2017-02-23 10:29:13 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.dianping.com/shop/6830656> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: Chunked decoder in 'BODY' state, still expecting more data to get to 'FINISHED' state.>]
+2017-02-23 10:29:13 [root] INFO: Failed(:exception) proxy:http://36.80.235.14:80 for processing http://www.dianping.com/shop/21028464
+2017-02-23 10:29:13 [root] INFO: Failed(:exception) proxy:http://125.162.208.252:80 for processing http://www.dianping.com/shop/79548617
+2017-02-23 10:29:13 [root] INFO: Failed(:exception) proxy:http://50.93.200.90:1080 for processing http://www.dianping.com/shop/3923032
+2017-02-23 10:29:13 [root] INFO: Failed(:exception) proxy:http://122.212.129.9:80 for processing http://www.dianping.com/shop/21684139
